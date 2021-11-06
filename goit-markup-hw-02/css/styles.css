@@ -1,0 +1,8 @@
+записываем цвета, которые повторяются
+:root {
+    --text-color:black ;
+}
+
+.text {
+    color: var(--text-color)
+}
