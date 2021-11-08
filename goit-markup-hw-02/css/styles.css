@@ -1,8 +1,849 @@
 записываем цвета, которые повторяются
 :root {
-    --text-color:black ;
+    --main-text-color:#212121;
+    --header-contacts-text-color:#757575;
+    --hover-text-color:#2196F3;
+    --main-title-text-color:#b1b1b1;
+    --paragraph-text-color:#757575;
+    --address-text-color:#FFFFFF;
+    --footer-contacts-text-color:rgba(255, 255, 255, 0.6);
 }
 
-.text {
-    color: var(--text-color)
+/* ------------- Header --------------*/
+.studio-header {
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
 }
+a {
+    text-decoration: none;
+}
+.studio-logo-header {
+    color:#212121;
+    font-family:'Raleway', sans-serif;
+    font-style: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    align:left;
+    vertical-align: top;
+    letter-spacing: 3%;
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+    text-decoration: none;
+}
+.studio-logo-header-web {
+    color:#2196F3;
+}
+ul>li {
+    list-style-type: none;
+    text-decoration: none;
+}
+.navigation-list {
+    color:#212121;
+    font-family:'Roboto', sans-serif;
+    font-style: 400;
+    font-size: 14px;
+    line-height: 1,14;
+    font-weight: 500;
+}
+.navigation-studio {
+    position: absolute;
+    width: 49px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+}
+.navigation-portfolio {
+    position: absolute;
+    width: 77px;
+    height: 16px;
+    left: 552px;
+    top: 32px;
+}
+.navigation-contacts {
+    position: absolute;
+    width: 68px;
+    height: 16px;
+    left: 679px;
+    top: 32px;
+}
+.contact-list {
+    color:#757575;
+    font-family:'Roboto', sans-serif;
+    font-style: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    align: left;
+    vertical-align: top;
+    letter-spacing: 2%;
+}
+.contact-mail {
+    position: absolute;
+    width: 135px;
+    height: 16px;
+    left: 1078px;
+    top: 32px;
+    color:#757575;
+}
+.contacts-tel {
+    position: absolute;
+    width: 122px;
+    height: 16px;
+    left: 1263px;
+    top: 32px;
+    color:#757575;
+}
+.link {
+    text-decoration:none;
+    color:inherit;
+}
+.link:hover, .link:focus {
+    color:#2196F3;
+}
+/* ------------------------------------------------------Main--------------------------------- */
+.service {
+    background-color: #2F303A;
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+}
+.service-title {
+    color:#FFFFFF;
+    font-family:'Roboto', sans-serif;
+    font-weight:900;
+    font-style:normal;
+    font-size:44px;
+    line-height:1,36;
+    letter-spacing:6%;
+    text-align:Center;
+    font-size: 44px;
+    vertical-align: Top;
+    letter-spacing: 6%;
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+    text-transform: uppercase;
+}
+.main-button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.order {
+    color:#FFFFFF;
+    font-weight: 700;
+}
+/* ------------------------Характеристики работы---------------------------------------- */
+.characteristic {
+    background-color: #FFFFFF;
+}
+.characteristic-item-title {
+    color:#212121;
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+ }
+ .details {
+    position: absolute;
+    width: 270px;
+    height: 16px;
+    left: 215px;
+    top: 774px;
+ }
+ .punctuality {
+    position: absolute;
+    width: 270px;
+    height: 16px;
+    left: 515px;
+    top: 774px;
+ }
+.planning {
+    position: absolute;
+    width: 270px;
+    height: 16px;
+    left: 815px;
+    top: 774px;
+}
+.modern-tech {
+    position: absolute;
+    width: 270px;
+    height: 16px;
+    left: 1115px;
+    top: 774px;
+}
+ .characteristic-item-subtitle {
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    color: #757575;
+ }
+ .ideas {
+    position: absolute;
+    width: 270px;
+    height: 75px;
+    left: 215px;
+    top: 800px;
+ }
+ .org-goal {
+    position: absolute;
+    width: 270px;
+    height: 75px;
+    left: 515px;
+    top: 800px;
+ }
+ .consulting {
+    position: absolute;
+    width: 270px;
+    height: 75px;
+    left: 815px;
+    top: 800px;
+ }
+ .problem-meaning {
+    position: absolute;
+    width: 270px;
+    height: 75px;
+    left: 1115px;
+    top: 800px;
+ }
+/* ----------------------------------------------------------Чем мы занимаемся------------------------------------------ */
+ .we-do {
+    background-color:#FFFFFF;
+ }
+
+.we-do-title {
+    color:#212121;
+    position: absolute;
+    width: 376px;
+    height: 42px;
+    left: 612px;
+    top: 969px;
+
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+}
+.we-do-photo {
+    width: 370px;
+    height: 294px;
+}
+.img1 {
+    position: absolute;
+    left: 215px;
+    top: 1061px;
+    mix-blend-mode: normal;
+}
+.img2 {
+    position: absolute;
+    left: 615px;
+    top: 1061px;
+}
+.img3 {
+    position: absolute;
+    left: 1015px;
+    top: 1061px;
+}
+/* --------------------------------------------------------Наша команда ---------------------------------------------- */
+.team-title {
+    color:#212121;
+    position: absolute;
+    width: 264px;
+    height: 42px;
+    left: 668px;
+    top: 1543px;
+
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+}
+/* ------------------------------Фото----------------------------- */
+.team-member-photo {
+    width: 270px;
+    height: 260px;
+}
+.igor-photo {
+    position: absolute;
+    width: 270px;
+    height: 260px;
+    left: 215px;
+    top: 1635px;
+    border-radius: 0px;
+}
+.olga-photo {
+    position: absolute;
+    width: 270px;
+    height: 260px;
+    left: 515px;
+    top: 1635px;
+    border-radius: 0px;
+}
+.nikolai-photo {
+    position: absolute;
+    width: 270px;
+    height: 260px;
+    left: 815px;
+    top: 1635px;
+    border-radius: 0px;
+}
+.mikhail-photo {
+    position: absolute;
+    width: 270px;
+    height: 260px;
+    left: 1115px;
+    top: 1635px;
+    border-radius: 0px;
+}
+/* ---------------------------------Имя------------------------------ */
+.team-member-name {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,19;
+    color:#212121;
+   
+}
+.igor {
+    position: absolute;
+    width: 151px;
+    height: 19px;
+    left: 275px;
+    top: 1925px;
+}
+.olga {
+    position: absolute;
+    width: 109px;
+    height: 19px;
+    left: 596px;
+    top: 1925px;
+}
+.nikolai {
+    position: absolute;
+    width: 137px;
+    height: 19px;
+    left: 882px;
+    top: 1925px;
+}
+.mikhail {
+    position: absolute;
+    width: 134px;
+    height: 19px;
+    left: 1183px;
+    top: 1925px;
+}
+/* ---------------------------Профессия----------------- */
+.job {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1,19;
+    color:#757575;
+}
+
+.product-designer {
+    position: absolute;
+    width: 130px;
+    height: 19px;
+    left: 285px;
+    top: 1954px;
+}
+.frontend {  
+    position: absolute;
+    width: 147px;
+    height: 19px;
+    left: 577px;
+    top: 1954px;
+}
+.marketing {
+    position: absolute;
+    width: 76px;
+    height: 19px;
+    left: 912px;
+    top: 1954px;
+}
+.ui {
+    position: absolute;
+    width: 87px;
+    height: 19px;
+    left: 1207px;
+    top: 1954px;
+}
+/* -----------------------------------------Студия--Футер------------------------------------------------------- */
+  
+.studio-footer {
+    background: #2F303A;
+}
+.studio-logo-footer {
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 2157px;
+    font-family:'Raleway', sans-serif;
+    font-style: normal;
+    font-weight:700;
+    font-size: 26px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
+}
+.studio-logo-footer-web {
+    color:#2196F3;
+}
+.studio-logo-footer-studio {
+    color:#FFFFFF;
+    color:black;
+}
+
+.studio-footer-address {
+    position: absolute;
+    width: 231px;
+    height: 21px;
+    left: 215px;
+    top: 2208px;
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    color:black;
+}
+.studio-footer-mail {
+    position: absolute;
+    width: 231px;
+    height: 21px;
+    left: 215px;
+    top: 2238px;
+
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    color:black;
+}
+.studio-footer-tel {
+    position: absolute;
+    width: 231px;
+    height: 21px;
+    left: 215px;
+    top: 2268px;
+
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    color:black;
+}
+/* ------------------------------------------------------------Портфолио-------------------------------------------- */
+
+.portfolio-header {
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+.portfolio-logo-header {
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-style: 400;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
+    color:#212121;
+    text-decoration: none;
+    position: absolute;
+}
+.portfolio-logo-header-web {
+    color:#2196F3;
+}
+/* ----------------------Кнопки-------------- */
+.button {
+    background-color:#E5E5E5;
+}
+.button:hover {
+    color:#FFFFFF;
+    background-color: #2196F3;
+}
+.button-item-all {
+    position: absolute;
+    width: 73px;
+    height: 38px;
+    left: 495px;
+    top: 174px;
+    background:  #F5F4FA;
+    border-radius: 4px;
+    border:#FFFFFF;
+}
+.button-item-sites {
+    position: absolute;
+    width: 128px;
+    height: 38px;
+    left: 576px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border:#FFFFFF;
+}
+.button-item-apps {
+    position: absolute;
+    width: 145px;
+    height: 38px;
+    left: 712px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border:#FFFFFF;
+}
+.button-item-design {
+    position: absolute;
+    width: 103px;
+    height: 38px;
+    left: 865px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border:#FFFFFF;
+}
+.button-item-p-marketing {
+    position: absolute;
+    width: 130px;
+    height: 38px;
+    left: 976px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border:#FFFFFF;
+}
+/* -----------------------Текст кнопок------------------ */
+.button-text {
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+/* -----------------------Проекты---------Фото---------- */
+.projects {
+background-color:#E5E5E5;
+}
+
+.technocrack {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 215px;
+    top: 262px;
+}
+.new-orlean {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 615px;
+    top: 262px;
+}
+
+.seafood {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 1015px;
+    top: 262px;
+}
+.prime{
+
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 215px;
+    top: 696px;
+}
+.boxes{
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 615px;
+    top: 696px;
+}
+.inspiration {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 1015px;
+    top: 696px;
+}
+.ltd {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 215px;
+    top: 1130px;
+}
+.lab {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 615px;
+    top: 1130px;
+}
+.g-b{
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 1015px;
+    top: 1130px;
+}
+/* -----------------------Названия проектов------------------- */
+.project-item-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.techno {
+    position: absolute;
+    width: 322px;
+    height: 36px;
+    left: 239px;
+    top: 576px;
+}
+.poster {
+    position: absolute;
+    width: 322px;
+    height: 36px;
+    left: 639px;
+    top: 576px;
+}
+.restoran-seafood {
+    position: absolute;
+    width: 322px;
+    height: 36px;
+    left: 1039px;
+    top: 576px;
+}
+.project-prime {
+    position: absolute;
+    width: 322px;
+    height: 36px;
+    left: 239px;
+    top: 1010px;
+}
+.project-boxes {
+    position: absolute;
+    width: 322px;
+    height: 36px;
+    left: 639px;
+    top: 1010px;
+}
+.inspiration-borders {
+    position: absolute;
+    width: 322px;
+    height: 36px;
+    left: 1039px;
+    top: 1010px;
+}
+.isdadie-ltd {
+
+    position: absolute;
+    width: 322px;
+    height: 36px;
+    left: 239px;
+    top: 1444px;
+}
+.project-lab {
+    position: absolute;
+    width: 322px;
+    height: 36px;
+    left: 639px;
+    top: 1444px;
+}
+.growing-business {
+    position: absolute;
+    width: 322px;
+    height: 36px;
+    left: 1039px;
+    top: 1444px;
+}
+/* ------------------------Виды проектов------------------------- */
+.project-item-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,88;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.sub-website1 {
+    position: absolute;
+    width: 322px;
+    height: 30px;
+    left: 239px;
+    top: 616px;
+}
+.sub-design1 {
+    position: absolute;
+    width: 322px;
+    height: 30px;
+    left: 639px;
+    top: 616px;
+}
+.sub-app1 {
+    position: absolute;
+    width: 322px;
+    height: 30px;
+    left: 1039px;
+    top: 616px;
+}
+.sub-marketing1 {
+    position: absolute;
+    width: 322px;
+    height: 30px;
+    left: 239px;
+    top: 1050px;
+}
+.sub-app2 {
+
+    position: absolute;
+    width: 322px;
+    height: 30px;
+    left: 639px;
+    top: 1050px;
+}
+.sub-wesite2 {
+    position: absolute;
+    width: 322px;
+    height: 30px;
+    left: 1039px;
+    top: 1050px;
+}
+.sub-design2 {
+    position: absolute;
+    width: 322px;
+    height: 30px;
+    left: 239px;
+    top: 1484px;
+}
+.sub-marketing2 {
+    position: absolute;
+    width: 322px;
+    height: 30px;
+    left: 639px;
+    top: 1484px;
+}
+.sub-app3 {
+    position: absolute;
+    width: 322px;
+    height: 30px;
+    left: 1039px;
+    top: 1484px;
+}
+/* -------------------------------Портфолио Футер----------------------------- */
+.portfolio-logo-footer {
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 1688px;
+
+    font-family:'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
+}
+.portfolio-logo-footer-web {
+    color: #2196F3;
+}
+.portfolio-logo-footer-studio {
+   color: #FFFFFF;
+   color:black;
+}
+.portfolio-footer-address {
+    position: absolute;
+    width: 231px;
+    height: 21px;
+    left: 215px;
+    top: 1739px;
+
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    color:#FFFFFF;
+    color:black;
+}
+.portfolio-footer-mail {
+    position: absolute;
+    width: 231px;
+    height: 21px;
+    left: 215px;
+    top: 1769px;
+    
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21,71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    color:black;
+}
+.portfolio-footer-tel {
+    position: absolute;
+    width: 231px;
+    height: 21px;
+    left: 215px;
+    top: 1799px;
+
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    color:black;
+}
+
