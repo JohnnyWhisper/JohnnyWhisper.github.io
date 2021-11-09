@@ -11,31 +11,20 @@
 /* -------------------------------------------Страница Студия---------------------------------------------------------- */
 /* -------------------------------- Header --------------*/
 .studio-header {
-    position: absolute;
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-    background:#FFFFFF;
 }
 a {
     text-decoration: none;
 }
 .studio-logo-header {
     color:#212121;
-    font-family:'Raleway', sans-serif;
-    font-style: 700;
+    text-decoration: none;
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
-    align:left;
-    vertical-align: top;
-    letter-spacing: 3%;
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
-    text-decoration: none;
+    letter-spacing: 0.03em;
 }
 .studio-logo-header-web {
     color:#2196F3;
@@ -47,56 +36,32 @@ ul>li {
 .navigation-list {
     color:#212121;
     font-family:'Roboto', sans-serif;
-    font-style: 400;
+    font-style: normal;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     font-weight: 500;
 }
 .navigation-studio {
-    position: absolute;
-    width: 49px;
-    height: 16px;
-    left: 453px;
-    top: 32px;
 }
 .navigation-portfolio {
-    position: absolute;
-    width: 77px;
-    height: 16px;
-    left: 552px;
-    top: 32px;
+ 
 }
 .navigation-contacts {
-    position: absolute;
-    width: 68px;
-    height: 16px;
-    left: 679px;
-    top: 32px;
+  
 }
 .contact-list {
     color:#757575;
     font-family:'Roboto', sans-serif;
-    font-style: 500;
+    font-style: normal;
+    font-weight:500;
     font-size: 14px;
     line-height: 1.14;
-    align: left;
-    vertical-align: top;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
 .contact-mail {
-    position: absolute;
-    width: 135px;
-    height: 16px;
-    left: 1078px;
-    top: 32px;
-    color:#757575;
 }
 .contacts-tel {
-    position: absolute;
-    width: 122px;
-    height: 16px;
-    left: 1263px;
-    top: 32px;
+  
     color:#757575;
 }
 .link {
@@ -108,177 +73,133 @@ ul>li {
 }
 /* ------------------------------------Main--------------------------------- */
 .service {
-    background-color: #2F303A;
-    position: absolute;
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
+   
 }
 .service-title {
-    color:#FFFFFF;
     font-family:'Roboto', sans-serif;
     font-weight:900;
     font-style:normal;
     font-size:44px;
-    line-height:1,36;
-    letter-spacing:6%;
-    text-align:Center;
-    font-size: 44px;
-    vertical-align: Top;
-    letter-spacing: 6%;
-    position: absolute;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
+    line-height:1.36;
+    letter-spacing:0.06em;
+    text-align:center;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
+    color:#FFFFFF;
 }
 .main-button {
-    cursor: pointer;
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
+
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    /* удалить тут и в html */
 }
-.order {
-    color:#FFFFFF;
-    font-weight: 700;
-}
+.order { 
+} 
+
 /* ------------------------Характеристики работы-------------------------------- */
+
+ /* удалить тут и в html */
 .characteristic {
-    background-color: #FFFFFF;
+   
 }
 .characteristic-item-title {
     color:#212121;
     font-family:'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
  }
  .details {
-    position: absolute;
-    width: 270px;
-    height: 16px;
-    left: 215px;
-    top: 774px;
+    
  }
  .punctuality {
-    position: absolute;
-    width: 270px;
-    height: 16px;
-    left: 515px;
-    top: 774px;
+   
  }
 .planning {
-    position: absolute;
-    width: 270px;
-    height: 16px;
-    left: 815px;
-    top: 774px;
+    
 }
 .modern-tech {
-    position: absolute;
-    width: 270px;
-    height: 16px;
-    left: 1115px;
-    top: 774px;
+  
 }
  .characteristic-item-subtitle {
     font-family:'Roboto', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
  }
  .ideas {
-    position: absolute;
-    width: 270px;
-    height: 75px;
-    left: 215px;
-    top: 800px;
+  
  }
  .org-goal {
-    position: absolute;
-    width: 270px;
-    height: 75px;
-    left: 515px;
-    top: 800px;
+ 
  }
  .consulting {
-    position: absolute;
-    width: 270px;
-    height: 75px;
-    left: 815px;
-    top: 800px;
+  
  }
  .problem-meaning {
-    position: absolute;
-    width: 270px;
-    height: 75px;
-    left: 1115px;
-    top: 800px;
+   
  }
 /* ----------------------------------------------------------Чем мы занимаемся------------------------------------------ */
  .we-do {
-    background-color:#FFFFFF;
  }
 
 .we-do-title {
     color:#212121;
-    position: absolute;
-    width: 376px;
-    height: 42px;
-    left: 612px;
-    top: 969px;
-
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
 }
 .we-do-photo {
     width: 370px;
     height: 294px;
 }
 .img1 {
-    position: absolute;
-    left: 215px;
-    top: 1061px;
-    mix-blend-mode: normal;
+  
 }
 .img2 {
-    position: absolute;
-    left: 615px;
-    top: 1061px;
+  
 }
 .img3 {
-    position: absolute;
-    left: 1015px;
-    top: 1061px;
+  
 }
 /* --------------------------------------------------------Наша команда ---------------------------------------------- */
 .team-title {
     color:#212121;
-    position: absolute;
-    width: 264px;
-    height: 42px;
-    left: 668px;
-    top: 1543px;
-
+    
     font-family:'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
 }
 /* ------------------------------Фото----------------------------- */
 .team-member-photo {
@@ -286,36 +207,16 @@ ul>li {
     height: 260px;
 }
 .igor-photo {
-    position: absolute;
-    width: 270px;
-    height: 260px;
-    left: 215px;
-    top: 1635px;
-    border-radius: 0px;
+ 
 }
 .olga-photo {
-    position: absolute;
-    width: 270px;
-    height: 260px;
-    left: 515px;
-    top: 1635px;
-    border-radius: 0px;
+  
 }
 .nikolai-photo {
-    position: absolute;
-    width: 270px;
-    height: 260px;
-    left: 815px;
-    top: 1635px;
-    border-radius: 0px;
+  
 }
 .mikhail-photo {
-    position: absolute;
-    width: 270px;
-    height: 260px;
-    left: 1115px;
-    top: 1635px;
-    border-radius: 0px;
+   
 }
 /* ---------------------------------Имя------------------------------ */
 .team-member-name {
@@ -323,75 +224,50 @@ ul>li {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,19;
-    color:#212121;
-   
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
 }
 .igor {
-    position: absolute;
-    width: 151px;
-    height: 19px;
-    left: 275px;
-    top: 1925px;
+  
 }
 .olga {
-    position: absolute;
-    width: 109px;
-    height: 19px;
-    left: 596px;
-    top: 1925px;
+  
 }
 .nikolai {
-    position: absolute;
-    width: 137px;
-    height: 19px;
-    left: 882px;
-    top: 1925px;
+
 }
 .mikhail {
-    position: absolute;
-    width: 134px;
-    height: 19px;
-    left: 1183px;
-    top: 1925px;
+  
 }
 /* ---------------------------Профессия----------------- */
 .job {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1,19;
+    line-height: 1.19;
     color:#757575;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #757575;
 }
 
 .product-designer {
-    position: absolute;
-    width: 130px;
-    height: 19px;
-    left: 285px;
-    top: 1954px;
+  
 }
 .frontend {  
-    position: absolute;
-    width: 147px;
-    height: 19px;
-    left: 577px;
-    top: 1954px;
+  
 }
 .marketing {
-    position: absolute;
-    width: 76px;
-    height: 19px;
-    left: 912px;
-    top: 1954px;
+  
 }
 .ui {
-    position: absolute;
-    width: 87px;
-    height: 19px;
-    left: 1207px;
-    top: 1954px;
+  
 }
 /* -----------------------------------------Студия--Футер------------------------------------------------------- */
   
@@ -399,70 +275,51 @@ ul>li {
     background: #2F303A;
 }
 .studio-logo-footer {
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 2157px;
+    
     font-family:'Raleway', sans-serif;
     font-style: normal;
     font-weight:700;
     font-size: 26px;
-    line-height: 1,19;
+    line-height: 1.19;
     letter-spacing: 0.03em;
+
 }
 .studio-logo-footer-web {
     color:#2196F3;
 }
 .studio-logo-footer-studio {
     color:#FFFFFF;
-    color:black;
 }
 
 .studio-footer-address {
-    position: absolute;
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 2208px;
+
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    color:black;
 }
 .studio-footer-mail {
-    position: absolute;
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 2238px;
-
+    
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    color:black;
+
 }
 .studio-footer-tel {
-    position: absolute;
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 2268px;
-
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    color:black;
 }
 /* ------------------------------------------------------------Портфолио-------------------------------------------- */
 
