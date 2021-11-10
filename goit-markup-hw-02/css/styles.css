@@ -41,14 +41,6 @@ ul>li {
     line-height: 1.14;
     font-weight: 500;
 }
-.navigation-studio {
-}
-.navigation-portfolio {
- 
-}
-.navigation-contacts {
-  
-}
 .contact-list {
     color:#757575;
     font-family:'Roboto', sans-serif;
@@ -58,12 +50,6 @@ ul>li {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.contact-mail {
-}
-.contacts-tel {
-  
-    color:#757575;
-}
 .link {
     text-decoration:none;
     color:inherit;
@@ -72,7 +58,7 @@ ul>li {
     color:#2196F3;
 }
 /* ------------------------------------Main--------------------------------- */
-.service {
+.service-order {
    
 }
 .service-title {
@@ -103,12 +89,6 @@ ul>li {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
-    /* удалить тут и в html */
-}
-.order { 
-} 
-
 /* ------------------------Характеристики работы-------------------------------- */
 
  /* удалить тут и в html */
@@ -125,18 +105,6 @@ ul>li {
     letter-spacing: 0.03em;
     text-transform: uppercase;
  }
- .details {
-    
- }
- .punctuality {
-   
- }
-.planning {
-    
-}
-.modern-tech {
-  
-}
  .characteristic-item-subtitle {
     font-family:'Roboto', sans-serif;
     font-style: normal;
@@ -145,18 +113,6 @@ ul>li {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
- }
- .ideas {
-  
- }
- .org-goal {
- 
- }
- .consulting {
-  
- }
- .problem-meaning {
-   
  }
 /* ----------------------------------------------------------Чем мы занимаемся------------------------------------------ */
  .we-do {
@@ -178,15 +134,6 @@ ul>li {
     width: 370px;
     height: 294px;
 }
-.img1 {
-  
-}
-.img2 {
-  
-}
-.img3 {
-  
-}
 /* --------------------------------------------------------Наша команда ---------------------------------------------- */
 .team-title {
     color:#212121;
@@ -205,18 +152,8 @@ ul>li {
 .team-member-photo {
     width: 270px;
     height: 260px;
-}
-.igor-photo {
- 
-}
-.olga-photo {
-  
-}
-.nikolai-photo {
-  
-}
-.mikhail-photo {
-   
+    background: url();
+    border-radius: 0px;
 }
 /* ---------------------------------Имя------------------------------ */
 .team-member-name {
@@ -229,18 +166,6 @@ ul>li {
     letter-spacing: 0.03em;
 
     color: #212121;
-}
-.igor {
-  
-}
-.olga {
-  
-}
-.nikolai {
-
-}
-.mikhail {
-  
 }
 /* ---------------------------Профессия----------------- */
 .job {
@@ -257,18 +182,6 @@ ul>li {
     color: #757575;
 }
 
-.product-designer {
-  
-}
-.frontend {  
-  
-}
-.marketing {
-  
-}
-.ui {
-  
-}
 /* -----------------------------------------Студия--Футер------------------------------------------------------- */
   
 .studio-footer {
@@ -282,7 +195,6 @@ ul>li {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-
 }
 .studio-logo-footer-web {
     color:#2196F3;
@@ -324,169 +236,46 @@ ul>li {
 /* ------------------------------------------------------------Портфолио-------------------------------------------- */
 
 .portfolio-header {
-    position: absolute;
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
+  
 }
 .portfolio-logo-header {
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
+   
     font-family: 'Raleway', sans-serif;
     font-style: 400;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,19;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color:#212121;
     text-decoration: none;
-    position: absolute;
 }
 .portfolio-logo-header-web {
     color:#2196F3;
 }
 /* ----------------------Кнопки-------------- */
 .button {
-    cursor: pointer;
-    background-color:#E5E5E5;
-}
-.button:hover {
-    color:#FFFFFF;
-    background-color: #2196F3;
-}
-.button-item-all {
-    position: absolute;
-    width: 73px;
-    height: 38px;
-    left: 495px;
-    top: 174px;
-    background:  #F5F4FA;
+    cursor: pointer; 
     border-radius: 4px;
-    border:#FFFFFF;
-}
-.button-item-sites {
-    position: absolute;
-    width: 128px;
-    height: 38px;
-    left: 576px;
-    top: 174px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    border:#FFFFFF;
-}
-.button-item-apps {
-    position: absolute;
-    width: 145px;
-    height: 38px;
-    left: 712px;
-    top: 174px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    border:#FFFFFF;
-}
-.button-item-design {
-    position: absolute;
-    width: 103px;
-    height: 38px;
-    left: 865px;
-    top: 174px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    border:#FFFFFF;
-}
-.button-item-p-marketing {
-    position: absolute;
-    width: 130px;
-    height: 38px;
-    left: 976px;
-    top: 174px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    border:#FFFFFF;
-}
-/* -----------------------Текст кнопок------------------ */
-.button-text {
     font-family:'Roboto', sans-serif;
-    font-style: normal;
+    font-style: 400;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    border-radius: 4px;
 }
-/* -----------------------Проекты---------Фото---------- */
-.projects {
-background-color:#E5E5E5;
-}
-
-.technocrack {
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 215px;
-    top: 262px;
-}
-.new-orlean {
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 615px;
-    top: 262px;
+.button:hover {
+    color:#2196F3;
 }
 
-.seafood {
-    position: absolute;
+/* ---------------------------Фото Проектов---------- */
+.project-item-img {
     width: 370px;
     height: 294px;
-    left: 1015px;
-    top: 262px;
 }
-.prime{
 
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 215px;
-    top: 696px;
-}
-.boxes{
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 615px;
-    top: 696px;
-}
-.inspiration {
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 1015px;
-    top: 696px;
-}
-.ltd {
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 215px;
-    top: 1130px;
-}
-.lab {
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 615px;
-    top: 1130px;
-}
-.g-b{
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 1015px;
-    top: 1130px;
-}
 /* -----------------------Названия проектов------------------- */
 .project-item-title {
     font-family: 'Roboto', sans-serif;
@@ -496,70 +285,6 @@ background-color:#E5E5E5;
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
-}
-.techno {
-    position: absolute;
-    width: 322px;
-    height: 36px;
-    left: 239px;
-    top: 576px;
-}
-.poster {
-    position: absolute;
-    width: 322px;
-    height: 36px;
-    left: 639px;
-    top: 576px;
-}
-.restoran-seafood {
-    position: absolute;
-    width: 322px;
-    height: 36px;
-    left: 1039px;
-    top: 576px;
-}
-.project-prime {
-    position: absolute;
-    width: 322px;
-    height: 36px;
-    left: 239px;
-    top: 1010px;
-}
-.project-boxes {
-    position: absolute;
-    width: 322px;
-    height: 36px;
-    left: 639px;
-    top: 1010px;
-}
-.inspiration-borders {
-    position: absolute;
-    width: 322px;
-    height: 36px;
-    left: 1039px;
-    top: 1010px;
-}
-.isdadie-ltd {
-
-    position: absolute;
-    width: 322px;
-    height: 36px;
-    left: 239px;
-    top: 1444px;
-}
-.project-lab {
-    position: absolute;
-    width: 322px;
-    height: 36px;
-    left: 639px;
-    top: 1444px;
-}
-.growing-business {
-    position: absolute;
-    width: 322px;
-    height: 36px;
-    left: 1039px;
-    top: 1444px;
 }
 /* ------------------------Виды проектов------------------------- */
 .project-item-subtitle {
@@ -571,138 +296,53 @@ background-color:#E5E5E5;
     letter-spacing: 0.03em;
     color: #757575;
 }
-.sub-website1 {
-    position: absolute;
-    width: 322px;
-    height: 30px;
-    left: 239px;
-    top: 616px;
-}
-.sub-design1 {
-    position: absolute;
-    width: 322px;
-    height: 30px;
-    left: 639px;
-    top: 616px;
-}
-.sub-app1 {
-    position: absolute;
-    width: 322px;
-    height: 30px;
-    left: 1039px;
-    top: 616px;
-}
-.sub-marketing1 {
-    position: absolute;
-    width: 322px;
-    height: 30px;
-    left: 239px;
-    top: 1050px;
-}
-.sub-app2 {
 
-    position: absolute;
-    width: 322px;
-    height: 30px;
-    left: 639px;
-    top: 1050px;
-}
-.sub-wesite2 {
-    position: absolute;
-    width: 322px;
-    height: 30px;
-    left: 1039px;
-    top: 1050px;
-}
-.sub-design2 {
-    position: absolute;
-    width: 322px;
-    height: 30px;
-    left: 239px;
-    top: 1484px;
-}
-.sub-marketing2 {
-    position: absolute;
-    width: 322px;
-    height: 30px;
-    left: 639px;
-    top: 1484px;
-}
-.sub-app3 {
-    position: absolute;
-    width: 322px;
-    height: 30px;
-    left: 1039px;
-    top: 1484px;
-}
 /* -------------------------------Портфолио Футер----------------------------- */
+.portfolio-footer {
+    background: #2F303A;
+}
 .portfolio-logo-footer {
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 1688px;
 
     font-family:'Raleway', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
-    line-height: 1,19;
+    line-height: 1ю19;
     letter-spacing: 0.03em;
+
 }
 .portfolio-logo-footer-web {
     color: #2196F3;
 }
 .portfolio-logo-footer-studio {
    color: #FFFFFF;
-   color:black;
 }
 .portfolio-footer-address {
-    position: absolute;
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 1739px;
-
+  
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color:#FFFFFF;
-    color:black;
 }
 .portfolio-footer-mail {
-    position: absolute;
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 1769px;
-    
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 21,71;
+    line-height: 1,71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    color:black;
 }
 .portfolio-footer-tel {
-    position: absolute;
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 1799px;
-
     font-family:'Roboto', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1,71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    color:black;
 }
 
