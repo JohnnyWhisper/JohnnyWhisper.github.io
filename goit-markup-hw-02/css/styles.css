@@ -2,11 +2,13 @@
     --main-text-color:#212121;
     --header-contacts-text-color:#757575;
     --hover-text-color:#2196F3;
-    --main-title-text-color:#b1b1b1;
+    --logo-header-web-color:#2196F3;
+    --main-title-text-color:#FFFFFF;
     --paragraph-text-color:#757575;
     --address-text-color:#FFFFFF;
     --main-background-color:#FFFFFF;
     --footer-contacts-text-color:rgba(255, 255, 255, 0.6);
+    --footer-background-color:#2F303A;
 }
 /* -------------------------------------------Страница Студия---------------------------------------------------------- */
 /* -------------------------------- Header --------------*/
@@ -16,25 +18,25 @@ a {
     text-decoration: none;
 }
 .studio-logo-header {
-    color:#212121;
+    color:var(--main-text-color);
     text-decoration: none;
 
     font-family: 'Raleway', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
 .studio-logo-header-web {
-    color:#2196F3;
+    color:var(--logo-header-web-color);
 }
 ul>li {
     list-style-type: none;
     text-decoration: none;
 }
 .navigation-list {
-    color:#212121;
+    color:var(--main-text-color);
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-size: 14px;
@@ -42,7 +44,7 @@ ul>li {
     font-weight: 500;
 }
 .contact-list {
-    color:#757575;
+    color:var(--header-contacts-text-color);
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-weight:500;
@@ -55,7 +57,7 @@ ul>li {
     color:inherit;
 }
 .link:hover, .link:focus {
-    color:#2196F3;
+    color:var(--hover-text-color);
 }
 /* ------------------------------------Main--------------------------------- */
 .service-order {
@@ -71,7 +73,7 @@ ul>li {
     text-align:center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color:#FFFFFF;
+    color:var(--main-title-text-color);
 }
 .main-button {
 
@@ -84,9 +86,9 @@ ul>li {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color:var(--main-title-text-color);
 
-    background: #2196F3;
+    background:var(--hover-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 /* ------------------------Характеристики работы-------------------------------- */
@@ -96,7 +98,7 @@ ul>li {
    
 }
 .characteristic-item-title {
-    color:#212121;
+    color:var(--main-text-color);
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -108,18 +110,17 @@ ul>li {
  .characteristic-item-subtitle {
     font-family:'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color:var(--paragraph-text-color);
  }
 /* ----------------------------------------------------------Чем мы занимаемся------------------------------------------ */
  .we-do {
  }
 
 .we-do-title {
-    color:#212121;
+    color:var(--main-text-color);
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -127,8 +128,6 @@ ul>li {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-
-    color: #212121;
 }
 .we-do-photo {
     width: 370px;
@@ -136,7 +135,7 @@ ul>li {
 }
 /* --------------------------------------------------------Наша команда ---------------------------------------------- */
 .team-title {
-    color:#212121;
+    color:var(--main-text-color);
     
     font-family:'Roboto', sans-serif;
     font-style: normal;
@@ -145,8 +144,6 @@ ul>li {
     line-height: 1.7;
     text-align: center;
     letter-spacing: 0.03em;
-
-    color: #212121;
 }
 /* ------------------------------Фото----------------------------- */
 .team-member-photo {
@@ -165,27 +162,24 @@ ul>li {
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color:var(--main-text-color);
 }
 /* ---------------------------Профессия----------------- */
 .job {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    color:#757575;
+    color:var(--paragraph-text-color);
 
     text-align: center;
     letter-spacing: 0.03em;
-
-    color: #757575;
 }
 
 /* -----------------------------------------Студия--Футер------------------------------------------------------- */
   
 .studio-footer {
-    background: #2F303A;
+    background:var(--footer-background-color);
 }
 .studio-logo-footer {
     
@@ -197,41 +191,38 @@ ul>li {
     letter-spacing: 0.03em;
 }
 .studio-logo-footer-web {
-    color:#2196F3;
+    color:var(--logo-header-web-color);
 }
 .studio-logo-footer-studio {
-    color:#FFFFFF;
+    color:var(--main-title-text-color);
 }
 
 .studio-footer-address {
 
     font-family:'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color:var(--address-text-color);
 }
 .studio-footer-mail {
     
     font-family:'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color:var(--footer-contacts-text-color);
 
 }
 .studio-footer-tel {
     font-family:'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color:var(--footer-contacts-text-color);
 }
 /* ------------------------------------------------------------Портфолио-------------------------------------------- */
 
@@ -239,18 +230,17 @@ ul>li {
   
 }
 .portfolio-logo-header {
-   
     font-family: 'Raleway', sans-serif;
     font-style: 400;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color:#212121;
+    color:var(--main-text-color);
     text-decoration: none;
 }
 .portfolio-logo-header-web {
-    color:#2196F3;
+    color:var(--logo-header-web-color);
 }
 /* ----------------------Кнопки-------------- */
 .button {
@@ -263,11 +253,11 @@ ul>li {
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color:var(--main-text-color);
     border-radius: 4px;
 }
 .button:hover {
-    color:#2196F3;
+    color:var(--hover-text-color);
 }
 
 /* ---------------------------Фото Проектов---------- */
@@ -280,26 +270,25 @@ ul>li {
 .project-item-title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color:var(--main-text-color);
 }
 /* ------------------------Виды проектов------------------------- */
 .project-item-subtitle {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1,88;
     letter-spacing: 0.03em;
-    color: #757575;
+    color:var(--paragraph-text-color);
 }
 
 /* -------------------------------Портфолио Футер----------------------------- */
 .portfolio-footer {
-    background: #2F303A;
+    background:var(--footer-background-color);
 }
 .portfolio-logo-footer {
 
@@ -312,37 +301,34 @@ ul>li {
 
 }
 .portfolio-logo-footer-web {
-    color: #2196F3;
+    color:var(--logo-header-web-color);
 }
 .portfolio-logo-footer-studio {
-   color: #FFFFFF;
+   color:var(--main-title-text-color);
 }
 .portfolio-footer-address {
   
     font-family:'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color:#FFFFFF;
+    color:var(--main-title-text-color);
 }
 .portfolio-footer-mail {
     font-family:'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1,71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color:var(--footer-contacts-text-color);
 }
 .portfolio-footer-tel {
     font-family:'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1,71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color:var(--footer-contacts-text-color);
 }
 
