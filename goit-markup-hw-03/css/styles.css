@@ -11,16 +11,44 @@
   --footer-background-color: #2f303a;
 }
 /* -------------------------------------------Страница Студия---------------------------------------------------------- */
+
+p, h1, h2, h3, h4 {
+  margin:0;
+} 
+ul {
+  margin:0;
+  padding:0; 
+}
+button {
+  cursor:pointer;
+}
 body {
   font-family:"Roboto", sans-serif;
 }
+.link {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--hover-text-color);
+}
+/* контейнером будет div */
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px; 
+  margin: 0 auto;
+}
 /* -------------------------------- Header --------------*/
-.studio-header {
+.header-container {
+  display:flex;
 }
 a {
   text-decoration: none;
 }
-.studio-logo-header {
+.logo-header {
   color: var(--main-text-color);
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -29,22 +57,37 @@ a {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 93px;
+  margin-top:24px;
+  margin-bottom:25px;
 }
-.studio-logo-header-web {
+.logo-header-web {
   color: var(--logo-header-web-color);
 }
 ul > li {
   list-style-type: none;
   text-decoration: none;
 }
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
 .navigation-list {
+  display:flex;
   color: var(--main-text-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
 }
+.navigation-item:not(:last-child) {
+  margin-right:50px;
+}
+
 .contact-list {
+  display:flex;
+  margin-left: auto;
+  align-items: center;
   color: var(--header-contacts-text-color);
   font-style: normal;
   font-weight: 500;
@@ -52,44 +95,63 @@ ul > li {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.link {
-  text-decoration: none;
-  color: inherit;
+.header-mail {
+display:flex;
+margin-right: 50px;
 }
-.link:hover,
-.link:focus {
-  color: var(--hover-text-color);
+.header-phone {
+  display:flex;
 }
 /* ------------------------------------Main--------------------------------- */
 .service-order {
+  display:flex;
+  background-color:#2F303A;
+
 }
 .service-title {
+  display:flex;
   font-weight: 900;
   font-style: normal;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-text-color);
+  text-align: center;
+  align-items:center;
+  margin-top: 200px;
 }
 .main-button {
+  display:flex;
+  align-items: center;
+  justify-content:center;
+
+  min-width:200px;
+  min-height:50px;
+  font-family:"Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  color: var(--main-title-text-color);
-
-  background: var(--hover-text-color);
+  background-color:var(--logo-header-web-color);
+  color:var(--main-title-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-top: 40px;
+  margin-bottom: 200px;
+}
+.main-button:hover {
 }
 /* ------------------------Характеристики работы-------------------------------- */
+.characteristic-list {
+  display:flex;
+  margin-top: 94px;
+}
+.characteristic-item {
+  margin-right: 30px;
+}
 .characteristic-item-title {
   color: var(--main-text-color);
   font-style: normal;
@@ -108,7 +170,14 @@ ul > li {
 }
 /* ----------------------------------------------------------Чем мы занимаемся------------------------------------------ */
 .we-do {
+  margin-top:94px;
 }
+.we-do-list {
+  display:flex;
+  justify-content: space-between;
+  margin-top:50px;
+}
+  
 
 .we-do-title {
   color: var(--main-text-color);
@@ -120,10 +189,19 @@ ul > li {
   letter-spacing: 0.03em;
 }
 .we-do-photo {
-  width: 370px;
-  height: 294px;
+  max-width: 370px;
+  max-height: 294px;
 }
 /* --------------------------------------------------------Наша команда ---------------------------------------------- */
+.our-team {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.team-list {
+  display:flex;
+  margin-top:50px;
+  justify-content: space-between;
+}
 .team-title {
   color: var(--main-text-color);
   font-style: normal;
@@ -135,8 +213,8 @@ ul > li {
 }
 /* ------------------------------Фото----------------------------- */
 .team-member-photo {
-  width: 270px;
-  height: 260px;
+  max-width: 270px;
+  max-height: 260px;
   background: url();
   border-radius: 0px;
 }
@@ -148,6 +226,7 @@ ul > li {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top:30px;
 
   color: var(--main-text-color);
 }
@@ -157,6 +236,8 @@ ul > li {
   font-size: 16px;
   line-height: 1.19;
   color: var(--paragraph-text-color);
+  margin-top: 10px;
+  margin-bottom: 30px;
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -219,6 +300,10 @@ ul > li {
   color: var(--logo-header-web-color);
 }
 /* ----------------------Кнопки-------------- */
+.button-list  {
+  display:flex;
+  justify-content: center;
+}
 .button {
   cursor: pointer;
   border-radius: 4px;
@@ -236,10 +321,18 @@ ul > li {
   color: var(--hover-text-color);
 }
 
+.projects-list {
+  display:flex;
+  flex-wrap:wrap;
+}
+.card {
+  display:flex;
+  flex-direction:column;
+}
 /* ---------------------------Фото Проектов---------- */
+
 .project-item-img {
-  width: 370px;
-  height: 294px;
+  max-width: 370px;
 }
 
 /* -----------------------Названия проектов------------------- */
