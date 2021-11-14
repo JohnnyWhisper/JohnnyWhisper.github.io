@@ -38,8 +38,8 @@ body {
 /* контейнером будет div */
 .container {
   max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px; 
+  padding-left: 5px;
+  padding-right: 5px; 
   margin: 0 auto;
 }
 /* -------------------------------- Header --------------*/
@@ -155,7 +155,7 @@ margin-right: 50px;
   border-radius: 4px;
   margin-top: 40px;
   margin-bottom: 200px;
-  margin-left:500px;
+  margin-left:470px;
   margin-right:700px;
 }
 .main-button:hover {
@@ -349,22 +349,31 @@ margin-right: 50px;
   background-color:var(--hover-text-color);
 }
 /* --------------------------------------------Проекты------------------- */
-.project-cards {
-  display:flex;
-}
+
 .projects-list {
   display:flex;
-  flex-wrap:wrap;
-  
+  flex-wrap: wrap;
+  list-style:none;
+  margin-top: -30px;
+  margin-left: -30px;
+  padding: 0;
 }
 .card {
   display:flex;
   flex-direction:column;
+  margin-top: 30px;
+  margin-left: 30px;
+
+  max-width:370px;
+  max-height:404px;
+  
 }
+
 /* --------------------Фото Проектов---------- */
 
 .project-item-img {
   align-content: 370px;
+  margin-top:0px;
 }
 
 /* ------------------Названия проектов--------- */
@@ -375,7 +384,7 @@ margin-right: 50px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
-  margin-top:20px;
+  margin:0px;
 }
 /* ------------------Виды проектов------------- */
 .project-item-subtitle {
@@ -384,5 +393,5 @@ margin-right: 50px;
   line-height: 1, 88;
   letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
-  margin-bottom:20px;
+  margin:0px;
 }
