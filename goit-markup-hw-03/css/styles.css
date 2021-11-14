@@ -9,6 +9,7 @@
   --main-background-color: #ffffff;
   --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
   --footer-background-color: #2f303a;
+  
 }
 /* -------------------------------------------Страница Студия---------------------------------------------------------- */
 
@@ -24,7 +25,6 @@ button {
 }
 body {
   font-family:"Roboto", sans-serif;
-  width:1600px;
 }
 .link {
   text-decoration: none;
@@ -108,18 +108,24 @@ margin-right: 50px;
 }
 .section {
   padding-bottom: 94px;
+  padding-top:94px;
 }
 
 /* ------------------------------------Main--------------------------------- */
 .service-order {
   display:flex;
-  padding-top:0;
   background-color:#2F303A;
-  padding-bottom:0px;
+  padding-top:200px;
+  padding-bottom:200px;
+  
 
 }
 .service {
- 
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+
 }
 .service-title {
   display:flex;
@@ -132,17 +138,11 @@ margin-right: 50px;
   text-transform: uppercase;
   color: var(--main-title-text-color);
   text-align: center;
-  margin-left:252px;
-  margin-top: 200px;
+  margin:0 auto;
+  margin-bottom: 30px;
   
 }
 .main-button {
-  display:flex;
-  align-items: center;
-  justify-content:center;
-
-  min-width:200px;
-  min-height:50px;
   font-family:"Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -153,17 +153,15 @@ margin-right: 50px;
   color:var(--main-title-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-top: 40px;
-  margin-bottom: 200px;
-  margin-left:470px;
-  margin-right:700px;
+  padding:10px 32px;
+  
 }
 .main-button:hover {
+
 }
 /* ------------------------Характеристики работы-------------------------------- */
 .characteristic-list {
   display:flex;
-  margin-top:94px;
 }
 .characteristic-item {
   margin-right: 30px;
@@ -176,6 +174,7 @@ margin-right: 50px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom:10px;
 }
 .characteristic-item-subtitle {
   font-style: normal;
@@ -185,8 +184,7 @@ margin-right: 50px;
   color: var(--paragraph-text-color);
 }
 /* ----------------------------------------------------------Чем мы занимаемся------------------------------------------ */
-.we-do {
-}
+
 .we-do-list {
   display:flex;
   justify-content: space-between;
@@ -208,6 +206,7 @@ margin-right: 50px;
 }
 /* --------------------------------------------------------Наша команда ---------------------------------------------- */
 .our-team {
+  
 }
 .team-list {
   display:flex;
@@ -238,8 +237,6 @@ margin-right: 50px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top:30px;
-
   color: var(--main-text-color);
 }
 /* ---------------------------Профессия----------------- */
@@ -254,12 +251,15 @@ margin-right: 50px;
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.team-member-card-footer {
+  padding-top:30px;
+  padding-bottom:30px;
+}
 /* -----------------------------------------Студия--Футер------------------------------------------------------- */
 
 .footer {
   padding-top:60px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   background: var(--footer-background-color);
 }
 .logo-footer {
@@ -269,7 +269,6 @@ margin-right: 50px;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-left:215px;
  
   
 }
@@ -288,7 +287,7 @@ margin-right: 50px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--address-text-color);
-  margin-left:215px;
+ 
   margin-top:20px;
 
 }
@@ -298,7 +297,7 @@ margin-right: 50px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--footer-contacts-text-color);
-  margin-left:215px;
+
   margin-top: 9px;
 
 }
@@ -310,18 +309,16 @@ margin-right: 50px;
   letter-spacing: 0.03em;
   color: var(--footer-contacts-text-color);
   margin-top: 9px;
-  margin-left:215px;
+ 
 }
 /* ------------------------------------------------------------Портфолио-------------------------------------------- */
 
 /* ----------------------Кнопки-------------- */
-.buttons {
-  padding-top:94px;
-}
 .button-list  {
   display:flex;
   align-items:center;
   justify-content: center;
+  margin-bottom:56px;
 }
 .button {
   display:flex;
@@ -385,8 +382,6 @@ margin-right: 50px;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
   margin:0px;
-  border-left:1px solid #EEEEEE;
-  border-right:1px solid #EEEEEE;
 }
 /* ------------------Виды проектов------------- */
 .project-item-subtitle {
@@ -396,8 +391,11 @@ margin-right: 50px;
   letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
   margin:0px;
+ 
+}
+.card-bordering {
   border-bottom:1px solid #EEEEEE;
   border-left:1px solid #EEEEEE;
   border-right:1px solid #EEEEEE;
+  padding:24px;
 }
-

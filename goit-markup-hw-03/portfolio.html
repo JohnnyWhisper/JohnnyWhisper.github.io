@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,85 +41,97 @@
       </div>
   </header>
   <main>
-  <section>
-    <section class="section" >
-      <div class="container buttons">
-      <ul class="button-list">
-        <li><button class="button" type="button" >Все</button></li> 
-        <li><button class="button" type="button">Веб-сайты</button></li> 
-        <li><button class="button" type="button">Приложения</button></li> 
-        <li><button class="button" type="button"> Дизайн</button></li>
-        <li><button class="button" type="button">Маркетинг</button></li> 
-      </ul>
-    </div>
-    </section>
-    <section class="section" >
-      <div class="container project-cards">
-      <ul class="projects-list">
-        <li class="card">
-          <img class="project-item-img" src="./images/technocrack.jpg" 
-            alt="technocrack">
-          <h3 class="project-item-title">Технокряк</h3>
-          <p class="project-item-subtitle">Веб-сайт</p>
-        </li>
-        <li class="card">
-          <img class="project-item-img" src="./images/new-orlean.jpg" 
-            alt="new-orlean">
-          <h3 class="project-item-title">Постер New Orlean vs Golden Star</h3>
-          <p class="project-item-subtitle">Дизайн</p>
-        </li>
-        <li class="card">
-          <img class="project-item-img" src="./images/seafood.jpg" 
-            alt="seafood">
-          <h3 class="project-item-title">Ресторан Seafood</h3>
-          <p class="project-item-subtitle">Приложение</p>
-        </li>
-        <li class="card">
-          <img class="project-item-img" src="./images/prime.jpg" 
-            alt="project prime">
-          <h3 class="project-item-title">Проект Prime</h3>
-          <p class="project-item-subtitle">Маркетинг</p>
-        </li>
-        <li class="card">
-          <img class="project-item-img" src="./images/boxes.jpg" 
-            alt="project boxes">
-          <h3 class="project-item-title">Проект Boxes</h3>
-          <p class="project-item-subtitle">Приложение</p>
-        </li>
-        <li class="card">
-          <img class="project-item-img" src="./images/inspiration.jpg" 
-            alt="inspiration">
-          <h3 class="project-item-title">Inspiration has no Borders</h3>
-          <p class="project-item-subtitle">Веб-сайт</p>
-        </li>
-        <li class="card">
-          <img class="project-item-img" src="./images/limited-edition.jpg" 
+    <section class="section"> 
+      <div class="container">
+        <ul class="button-list">
+          <li><button class="button" type="button" >Все</button></li> 
+          <li><button class="button" type="button">Веб-сайты</button></li> 
+          <li><button class="button" type="button">Приложения</button></li> 
+          <li><button class="button" type="button"> Дизайн</button></li>
+          <li><button class="button" type="button">Маркетинг</button></li> 
+        </ul>
+        <ul class="projects-list">
+          <li class="card">
+            <img class="project-item-img" src="./images/technocrack.jpg" 
+              alt="technocrack">
+            <div class="card-bordering">
+              <h3 class="project-item-title">Технокряк</h3>
+              <p class="project-item-subtitle">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="card">
+           <img class="project-item-img" src="./images/new-orlean.jpg" 
+              alt="new-orlean">
+            <div  class="card-bordering">
+              <h3 class="project-item-title">Постер New Orlean vs Golden Star</h3>
+              <p class="project-item-subtitle">Дизайн</p>
+            </div>
+          </li>
+          <li class="card">
+            <img class="project-item-img" src="./images/seafood.jpg" 
+              alt="seafood">
+            <div  class="card-bordering">
+              <h3 class="project-item-title">Ресторан Seafood</h3>
+              <p class="project-item-subtitle">Приложение</p>
+            </div>
+          </li>
+          <li class="card">
+            <img class="project-item-img" src="./images/prime.jpg" 
+              alt="project prime">
+            <div  class="card-bordering">
+              <h3 class="project-item-title">Проект Prime</h3>
+              <p class="project-item-subtitle">Маркетинг</p>
+            </div>
+          </li>
+          <li class="card">
+           <img class="project-item-img" src="./images/boxes.jpg" 
+             alt="project boxes">
+             <div  class="card-bordering">
+              <h3 class="project-item-title">Проект Boxes</h3>
+              <p class="project-item-subtitle">Приложение</p>
+             </div>
+          </li>
+          <li class="card">
+           <img class="project-item-img" src="./images/inspiration.jpg" 
+              alt="inspiration">
+            <div  class="card-bordering">
+              <h3 class="project-item-title">Inspiration has no Borders</h3>
+              <p class="project-item-subtitle">Веб-сайт</p>
+            </div>
+          </li>
+           <li class="card">
+            <img class="project-item-img" src="./images/limited-edition.jpg" 
             alt="limited-edition">
-          <h3 class="project-item-title">Издание Limited Editions</h3>
-          <p class="project-item-subtitle">Дизайн</p>
-        </li>
-        <li class="card">
-          <img class="project-item-img" src="./images/lab.jpg" 
-            alt="lab">
-          <h3 class="project-item-title">Проект LAB</h3>
-          <p class="project-item-subtitle">Маркетинг</p>
-        </li>
-        <li class="card">
-          <img class="project-item-img" src="./images/growing-b.jpg" 
-            alt="growing-business">
-          <h3 class="project-item-title"> Growing Business</h3>
-          <p class="project-item-subtitle">Приложение</p>
-        </li>
-      </ul>
+            <div  class="card-bordering">
+              <h3 class="project-item-title">Издание Limited Editions</h3>
+              <p class="project-item-subtitle">Дизайн</p>
+            </div>
+          </li>
+          <li class="card">
+           <img class="project-item-img" src="./images/lab.jpg" 
+              alt="lab">
+            <div  class="card-bordering">
+              <h3 class="project-item-title">Проект LAB</h3>
+              <p class="project-item-subtitle">Маркетинг</p>
+            </div>
+          </li>
+          <li class="card">
+            <img class="project-item-img" src="./images/growing-b.jpg" 
+              alt="growing-business">
+            <div  class="card-bordering">
+              <h3 class="project-item-title"> Growing Business</h3>
+              <p class="project-item-subtitle">Приложение</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
-  </section>
   </main>
-  <footer>
-    <div class="footer">
-                              <!--Логотип-->
-    <a class="logo-footer" href="./index.html" lang="en"><span class="logo-footer-web">Web</span><span class="logo-footer-studio">Studio</span></a>
-                              <!--Контакты-->
+  <footer class="footer" >
+    <div class="container">
+                 <!--Логотип-->
+      <a class="logo-footer" href="./index.html" lang="en"><span class="logo-footer-web">Web</span><span class="logo-footer-studio">Studio</span></a>
+                 <!--Контакты-->
       <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address> 
       <ul class="footer-contacts">
         <li class="footer-mail">
@@ -128,7 +141,7 @@
           <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
-      </div>
+    </div>                   
     </footer>
   </body>
 </html>
