@@ -385,6 +385,8 @@ margin-right: 50px;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
   margin:0px;
+  border-left:1px solid #EEEEEE;
+  border-right:1px solid #EEEEEE;
 }
 /* ------------------Виды проектов------------- */
 .project-item-subtitle {
@@ -394,4 +396,8 @@ margin-right: 50px;
   letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
   margin:0px;
+  border-bottom:1px solid #EEEEEE;
+  border-left:1px solid #EEEEEE;
+  border-right:1px solid #EEEEEE;
 }
+
