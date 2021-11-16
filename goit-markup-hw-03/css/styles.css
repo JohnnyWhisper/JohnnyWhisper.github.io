@@ -45,6 +45,9 @@ body {
 /* -------------------------------- Header --------------*/
 .header {
   border-bottom: 1px solid #ECECEC;
+  padding-top:24px;
+  padding-bottom: 25px;
+ 
 }
 .header-container {
   display:flex;
@@ -62,8 +65,7 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 93px;
-  margin-top:24px;
-  margin-bottom:25px;
+ 
 }
 .logo-header-web {
   color: var(--logo-header-web-color);
@@ -108,7 +110,6 @@ margin-right: 50px;
 }
 .section {
   padding-bottom: 94px;
-  padding-top:94px;
 }
 
 /* ------------------------------------Main--------------------------------- */
@@ -160,8 +161,12 @@ margin-right: 50px;
 
 }
 /* ------------------------Характеристики работы-------------------------------- */
+.section.work-characteristic {
+  padding-top:94px;
+}
 .characteristic-list {
   display:flex;
+
 }
 .characteristic-item {
   margin-right: 30px;
@@ -206,7 +211,7 @@ margin-right: 50px;
 }
 /* --------------------------------------------------------Наша команда ---------------------------------------------- */
 .our-team {
-  
+  padding-top:94px;
 }
 .team-list {
   display:flex;
@@ -246,7 +251,6 @@ margin-right: 50px;
   line-height: 1.19;
   color: var(--paragraph-text-color);
   margin-top: 10px;
-  margin-bottom: 30px;
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -318,6 +322,7 @@ margin-right: 50px;
   display:flex;
   align-items:center;
   justify-content: center;
+  padding-top:94px;
   margin-bottom:56px;
 }
 .button {
@@ -335,8 +340,7 @@ margin-right: 50px;
   border-radius: 4px;
   margin-right: 8px;
   border:none;
-  height: 38px;
-  min-width:73px;
+
   padding-top:6px;
   padding-left:22px;
   padding-right:22px;
@@ -381,13 +385,13 @@ margin-right: 50px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
-  margin:0px;
+  margin-bottom: 4px;
 }
 /* ------------------Виды проектов------------- */
 .project-item-subtitle {
   font-style: normal;
   font-size: 16px;
-  line-height: 1, 88;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
   margin:0px;
