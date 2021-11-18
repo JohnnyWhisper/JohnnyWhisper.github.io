@@ -318,11 +318,13 @@ margin-right: 50px;
 /* ------------------------------------------------------------Портфолио-------------------------------------------- */
 
 /* ----------------------Кнопки-------------- */
+.buttons-and-projects {
+  padding-top:94px;
+}
 .button-list  {
   display:flex;
   align-items:center;
   justify-content: center;
-  padding-top:94px;
   margin-bottom:56px;
 }
 .button {
