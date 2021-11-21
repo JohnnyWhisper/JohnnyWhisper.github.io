@@ -119,8 +119,6 @@ align-items: center;
 }
 .phone-symbol {
   display:flex;
-  width:10px;
-  height:16px;
   margin-right:10px;
   align-items:center;
 }
@@ -130,7 +128,7 @@ align-items: center;
 }
 .header-phone {
   display:flex;
-  align-items: center;
+  align-items:center;
 }
 .section {
   padding-bottom: 94px;
@@ -194,19 +192,22 @@ color: ;
 background-color: ;
 }
 /* ------------------------Характеристики работы-------------------------------- */
+/* ----секция ----*/
 .section.work-characteristic {
   padding-top:94px;
 }
+/* ---div в котором ul ---*/
 .characteristic-list {
   display:flex;
 
 }
-.characteristic-icon:hover,
-.characteristic-icon:focus {
-fill:var(--hover-text-color);
-
+/* ---------li--------- */
+.characteristic-item {
+  margin-right: 30px;
 }
-.characteristic-item-rectangle {
+/* ---сылка с иконкой внутри*/
+
+.characteristic-item-link {
   width: 270px;
   height: 120px;
   background-color: #F5F4FA;
@@ -215,16 +216,14 @@ fill:var(--hover-text-color);
   display:flex;
   align-items: center;
   justify-content: center;
-  
 }
-.characteristic-item-rectangle:hover,
-.characteristic-item-rectangle:focus {
+.characteristic-item-link:hover,
+.characteristic-item-link:focus {
   fill:var(--hover-text-color);
-  border:var(--hover-text-color);
 }
-.characteristic-item {
-  margin-right: 30px;
-}
+
+
+
 .characteristic-item-title {
   color: var(--main-text-color);
   font-style: normal;
@@ -346,7 +345,7 @@ fill:var(--hover-text-color);
   background-color: #2196F3;
 }
 
-
+/* -----------------------------------------Постоянные клиенты------------------ */
 .regular-customers-title {
   color: var(--main-text-color);
   font-style: normal;
@@ -371,10 +370,7 @@ fill:var(--hover-text-color);
   width: 170px;
   height: 92px;
 }
-.company-rectangle:hover,
-.company-rectangle:focus{
-  border:var(--hover-text-color);
-}
+
 .company-logo {
   fill:#AFB1B8;
 }
@@ -382,6 +378,10 @@ fill:var(--hover-text-color);
 .company-logo:focus {
   fill:var(--hover-text-color);
 }
+/* .company-rectangle:hover {
+  border:var(--hover-text-color);
+} */
+
 /* -----------------------------------------Студия--Футер------------------------------------------------------- */
 
 .footer {
@@ -456,7 +456,6 @@ margin-bottom:20px;
 }
 .footer-social-networks-list {
   display: flex;
- flex-shrink:;
 }
 .footer-social-networks-item {
   width:44px;
