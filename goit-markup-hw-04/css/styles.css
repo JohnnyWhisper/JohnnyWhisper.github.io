@@ -107,10 +107,6 @@ ul > li {
   align-items:center;
 }
 
-.envelope-symbol:hover,
-.envelope-symbol:focus {
-  fill:#2196F3;
-}
 
 .header-mail {
 display:flex;
@@ -122,10 +118,7 @@ align-items: center;
   margin-right:10px;
   align-items:center;
 }
-.phone-symbol:hover,
-.phone-symbol:focus {
-  fill:#2196F3;
-}
+
 .header-phone {
   display:flex;
   align-items:center;
@@ -133,14 +126,14 @@ align-items: center;
 .section {
   padding-bottom: 94px;
 }
-.mail-link:hover,
-.mail-link:focus {
-  color: var(--hover-text-color);
-}
-/* .header-mail:hover .envelope-symbol,
+.header-mail:hover .envelope-symbol,
 .header-mail:focus .envelope-symbol {
-  color: var(--hover-text-color);
-} */
+  fill: var(--hover-text-color);
+}
+.header-phone:hover .phone-symbol,
+.header-phone:focus .phone-symbol {
+  fill: var(--hover-text-color);
+}
 /* ------------------------------------Main--------------------------------- */
 .service-order {
   display:flex;
@@ -380,17 +373,20 @@ background-color: #188CE8;
   height: 92px;
 
 }
-.company-link:hover {
+.company-link:hover,
+.company-link:focus {
   border: 1px solid var(--hover-text-color);
   border-radius: 4px;
 }
 
+.company-link:hover .company-logo,
+.company-link:focus .company-logo {
+ fill:var(--hover-text-color)
+}
+
+
 .company-logo {
   fill:#AFB1B8;
-}
-.company-logo:hover,
-.company-logo:focus {
-  fill:var(--hover-text-color);
 }
 
 /* -----------------------------------------Студия--Футер------------------------------------------------------- */
