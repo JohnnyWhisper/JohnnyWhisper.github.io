@@ -188,8 +188,7 @@ align-items: center;
 }
 .main-button:hover,
 .main-button:focus {
-color: ;
-background-color: ;
+background-color: #188CE8;
 }
 /* ------------------------Характеристики работы-------------------------------- */
 /* ----секция ----*/
@@ -346,6 +345,9 @@ background-color: ;
 }
 
 /* -----------------------------------------Постоянные клиенты------------------ */
+.regular-customers {
+  padding-top:94px;
+}
 .regular-customers-title {
   color: var(--main-text-color);
   font-style: normal;
@@ -361,7 +363,7 @@ background-color: ;
   display:flex;
   justify-content:space-between;
 }
-.company-rectangle {
+.company-link {
   display:flex;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -369,6 +371,11 @@ background-color: ;
   justify-content: center;
   width: 170px;
   height: 92px;
+
+}
+.company-link:hover {
+  border: 1px solid var(--hover-text-color);
+  border-radius: 4px;
 }
 
 .company-logo {
@@ -378,9 +385,6 @@ background-color: ;
 .company-logo:focus {
   fill:var(--hover-text-color);
 }
-/* .company-rectangle:hover {
-  border:var(--hover-text-color);
-} */
 
 /* -----------------------------------------Студия--Футер------------------------------------------------------- */
 
