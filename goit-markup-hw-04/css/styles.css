@@ -133,7 +133,14 @@ align-items: center;
 .section {
   padding-bottom: 94px;
 }
-
+.mail-link:hover,
+.mail-link:focus {
+  color: var(--hover-text-color);
+}
+/* .header-mail:hover .envelope-symbol,
+.header-mail:focus .envelope-symbol {
+  color: var(--hover-text-color);
+} */
 /* ------------------------------------Main--------------------------------- */
 .service-order {
   display:flex;
@@ -147,7 +154,7 @@ align-items: center;
   url(../images/hero-backgroung-image.jpg);
 
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 
 }
@@ -216,10 +223,10 @@ background-color: #188CE8;
   align-items: center;
   justify-content: center;
 }
-.characteristic-item-link:hover,
+/* .characteristic-item-link:hover,
 .characteristic-item-link:focus {
   fill:var(--hover-text-color);
-}
+} */
 
 
 
@@ -520,6 +527,7 @@ margin-bottom:20px;
   padding-top:6px;
   padding-left:22px;
   padding-right:22px;
+  padding-bottom: 6px;
 }
 .button:hover {
   color:var(--main-title-text-color);
