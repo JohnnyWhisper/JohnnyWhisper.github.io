@@ -574,7 +574,57 @@ margin-bottom:20px;
 .footer-social-icon {
 
 }
+.footer-subscription-form {
+  margin-left: 154px;
+  
+}
+.footer-subscription-title {
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+.footer-subscription-input {
+  background-color: #2F303A;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left:16px;
+}
+.footer-subscription-button {
+  width: 200px;
+  height: 50px;
+  background-color: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
+  padding-left:29px;
+  padding-right: 62px;;
+
+  color: #FFFFFF;
+  margin-left:12px;
+  position: absolute;
+}
+.footer-subscription-icon {
+  position: absolute;
+  left:1333px;
+  right:243px;
+  bottom:px;
+  margin-left: -10px;
+  margin-top: 13px;
+}
 /* ------------------------------------------------------------Портфолио-------------------------------------------- */
 
 /* ----------------------Кнопки-------------- */
