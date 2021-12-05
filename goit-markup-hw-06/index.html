@@ -433,11 +433,19 @@
           <p class="modal-form-comments">Комментарий</p> 
           <textarea name="comments" cols="30" rows="10" placeholder="Введите текст" class="modal-form-comments-area"></textarea>
          </div>
-         <label>
-          <input type="checkbox" name="mailing-agreement" class="mailing-agreement">
-          <span class="mailing-agreement-text">Соглашаюсь с рассылкой и принимаю <a href="" class="mailing-agreement-link link"><u>Условия договора</u></a></span>
-         </label>
-         <button type="submit" class="send-mailing-agreement">Отправить</button>
+         <div class="modal-field5">
+          <input type="checkbox" name="policy" id="policy" class="modal-check is-hidden" >
+          <label for="policy" class="check-text">
+            <span class="check-item">
+              <svg class="check-icon" width="11" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю&nbsp; <span > <a href="" class="mailing-agreement-link link">Условия договора</a></span>
+          </label>
+          
+          </div>
+         <button type="submit" class="send-mailing-agreement-button">Отправить</button>
         </form>
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="11" height="11">

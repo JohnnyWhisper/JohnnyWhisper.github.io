@@ -229,6 +229,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   padding:10px 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border:none;
 }
 .main-button:hover,
 .main-button:focus {
@@ -618,6 +619,7 @@ margin-bottom: 20px;
   color: #FFFFFF;
   margin-left:12px;
   position:absolute;
+  border:none;
 }
 .footer-subscription-icon {
   position: absolute;
@@ -943,34 +945,64 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 box-sizing: border-box;
 border-radius: 4px;
 padding:12px 16px;
+resize:none;
 transition:border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-comments-area:hover,
 .modal-form-comments-area:focus {
   border:1px solid #2196F3;
 }
-.mailing-agreement {
+
+
+.modal-check {
   position: absolute;
-  left:52px;
+  left:10px;
   top:442px;
-  font-style: normal;
-  font-weight: 400;
+
+}
+
+.modal-check:checked + .check-text .check-item {
+  background-color:var(--logo-header-web-color);
+  border:none;
+
+}
+.check-text {
+  position: absolute;
+  left:54px;
+  top:437px;
+
+  font-weight:400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: #757575;
+  display:flex;
+  align-items: center;
+
 }
-.mailing-agreement-text {
-  position: absolute;
-  left:76.38px;
-  top:437px;
+.check-item {
+  width:16px;
+  height:15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
+
+.check-icon {
+  fill:#FFFFFF;
+}
+
 .mailing-agreement-link {
   color:var(--hover-text-color);
+  text-decoration: underline;
+  
 }
 
-.send-mailing-agreement {
+.send-mailing-agreement-button {
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -990,14 +1022,15 @@ padding-top:10px;
 padding-bottom:10px;
 padding-left:56px;
 padding-right: 55px;
+border:none;
 
 background-color: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
-.send-mailing-agreement:hover,
-.send-mailing-agreement:focus {
+.send-mailing-agreement-button:hover,
+.send-mailing-agreement-button:focus {
   background-color: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
