@@ -1,0 +1,45 @@
+.customers {
+    padding-top:94px;
+  }
+  .customers__title {
+    color:$mainTextColor;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom:50px;
+  
+  }
+  .customers__list {
+    display:flex;
+    justify-content:space-between;
+  }
+  .company__link {
+    display:flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    transition: $transitionBorder;
+    &:hover,
+    &:focus {
+      border: 1px solid $hoverTextColor;
+      border-radius: 4px;
+    }
+    &:hover .company__logo,
+    &:focus .company__logo {
+   fill:$iconsCompanyHoverFill;
+  }
+  
+  }
+ 
+  .company__logo {
+    fill:#AFB1B8;
+    transition: $transitionFill;
+  }
+  
+  

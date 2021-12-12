@@ -1,0 +1,100 @@
+
+.footer {
+    padding-top:60px;
+    padding-bottom: 60px;
+    background:$footerBackgroundColor;
+  }
+  .footer-container {
+    display:flex;
+  }
+  .logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+   
+  }
+  .logo-footer__web {
+    color:$logoWeb-color;
+  }
+  .logo-footer__studio {
+    color:$mainTitleTextColor;
+  }
+  .footer__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color:$addressTextColor;
+   
+    margin-top:20px;
+  
+  }
+  .footer__mail {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color:$footerContactsTextColor;
+  
+    margin-top: 9px;
+  
+  }
+  
+  .footer__tel {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $footerContactsTextColor;
+    margin-top: 9px;
+   
+  }
+  
+  .footer-social {
+    margin-left:70px;
+  }
+  .join-us {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:$whiteTextColor;
+  margin-bottom:20px;
+  }
+  .footer-social__list {
+    display: flex;
+  }
+  .footer-social__item {
+    width:44px;
+    height:44px;
+  }
+  .footer-social__item + .footer-social__item {
+    margin-left: 10px;
+  }
+  .footer-social__link {
+    width:100%;
+    height:100%;
+    display:block;
+    fill: $whiteTextColor;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.1);
+    transition: $transitionColor, $transitionBackgroundColor; 
+
+    &:hover,
+    &:focus {
+      fill:$iconsSocialHoverFill;
+      background-color: $iconsCompanyHoverFill;
+    }
+    
+  }
+  
+  
+  

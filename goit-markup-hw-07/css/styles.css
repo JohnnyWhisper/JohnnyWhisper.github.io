@@ -407,7 +407,7 @@ color: #FFFFFF;
   width:44px;
   height:44px;
 }
-.member-social__item + .member-social-item {
+.member-social__item + .member-social__item {
   margin-left: 10px;
 }
 .member-social__link {
@@ -796,7 +796,7 @@ transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__close:hover,
 .modal__close:focus {
-fill:var(--hover-text-color)
+fill:var(--hover-text-color);
 }
 .is-hidden {
   visibility: hidden;
