@@ -1,0 +1,38 @@
+  p, h1, h2, h3, h4 {
+    margin:0;
+  } 
+  ul {
+    margin:0;
+    padding:0; 
+  }
+  button {
+    cursor:pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  body {
+    font-family:"Roboto", sans-serif;
+  }
+  .link {
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link:hover,
+  .link:focus {
+    color:$hoverTextColor;
+  }
+  .container {
+    max-width: 1200px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    margin: 0 auto;
+  }
+  .section {
+    padding-bottom: 94px;
+  }
+  .is-hidden {
+    visibility: hidden;
+    opacity:0;
+    pointer-events:none;
+  }

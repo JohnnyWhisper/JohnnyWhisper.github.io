@@ -1,0 +1,50 @@
+.footer-subscription__form {
+    margin-left: 93px;
+  }
+  .footer-subscription__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  color:$mainTitleTextColor;
+  margin-bottom: 20px;
+  }
+  .footer-subscription__input {
+    background-color: #2F303A;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left:16px;
+    color:$mainTitleTextColor;
+   
+  }
+  .footer-subscription__button {
+    width: 200px;
+    height: 50px;
+    background-color:$sendButtonBackground;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    letter-spacing: 0.06em;
+    padding-left:29px;
+    padding-right: 62px;;
+  
+    color:$whiteTextColor;
+    margin-left:12px;
+    position:absolute;
+    border:none;
+  }
+  .footer-subscription__icon {
+    position: absolute;
+    margin-top:13px;
+    margin-left: 160px;
+  }

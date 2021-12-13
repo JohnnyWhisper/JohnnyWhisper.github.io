@@ -1,0 +1,129 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    padding-top:24px;
+    padding-bottom: 25px;
+  }
+  
+.header-container {
+    display:flex;
+  }
+  a {
+    text-decoration: none;
+  }
+  .logo-header {
+    color: $mainTextColor;
+    text-decoration: none;
+    font-family:$RalewayFontFamily;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+   
+  }
+  .logo-header--web {
+    color:$logoWeb-color;
+  }
+  ul > li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .header-navigation {
+    display: flex;
+    align-items: center;
+  }
+  .navigation__list {
+    display:flex;
+    color:$mainTextColor;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+  }
+  .navigation__item:not(:last-child) {
+    margin-right:50px;
+  }
+  .studio__link {
+    position:relative;
+  }
+  .studio__link.current::after {
+    content:"";
+    width:100%;
+    height:4px;
+    background-color:$hoverTextColor; 
+    border-radius: 2px;
+    position:absolute;
+    display:block;
+    bottom:-32px;
+    left: 0;
+  }
+  .portfolio__link {
+    position:relative;
+  }
+  .portfolio__link.current::after {
+    content:"";
+    width:100%;
+    height:4px;
+    background-color:$hoverTextColor; 
+    border-radius: 2px;
+    position:absolute;
+    display:block;
+    bottom:-32px;
+    left: 0;
+  }
+  .contact__list {
+    display:flex;
+    margin-left: auto;
+    align-items: center;
+    color: $headerContactsTextColor;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .envelope__symbol {
+    display:flex;
+    margin-right:10px;
+    align-items:center;
+    transition:$transitionFill;
+  }
+  
+  
+  .header-mail {
+  display:flex;
+  margin-right: 30px;
+  align-items: center;
+  transition:$transitionColor;
+    &:hover,
+    &:focus {
+        color:$hoverTextColor;
+  }
+  }
+  .phone__symbol {
+    display:flex;
+    margin-right:10px;
+    align-items:center;
+    transition:$transitionFill;
+  }
+  
+  .header-phone {
+    display:flex;
+    align-items:center;
+    transition:$transitionColor;
+    &:hover,
+    &:focus {
+      color:$hoverTextColor;
+    }
+    
+  }
+ 
+  .header-mail:hover .envelope__symbol,
+  .header-mail:focus .envelope__symbol {
+    fill:$hoverTextColor;
+  }
+  .header-phone:hover .phone__symbol,
+  .header-phone:focus .phone__symbol {
+    fill: $hoverTextColor;
+  }

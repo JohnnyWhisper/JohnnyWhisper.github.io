@@ -1,0 +1,39 @@
+.section.work-characteristic {
+    padding-top:94px;
+  }
+  .characteristic__list {
+    display:flex;
+  
+  }
+  .characteristic__item {
+    margin-right: 30px;
+  }
+ 
+  .characteristic__link {
+    width: 270px;
+    height: 120px;
+    background-color:$characteristicAndTeamBackground;
+    border-radius: 4px;
+    margin-bottom:30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .characteristic__title {
+    color: $mainTextColor;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom:10px;
+  }
+  .characteristic__subtitle {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:$paragraphTextColor;
+  }
