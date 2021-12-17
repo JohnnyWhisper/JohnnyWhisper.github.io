@@ -46,9 +46,8 @@
   }
   .studio__link {
     position:relative;
-  }
-  .studio__link.current::after {
-    content:"";
+    &.current::after {
+      content:"";
     width:100%;
     height:4px;
     background-color:$hoverTextColor; 
@@ -57,12 +56,13 @@
     display:block;
     bottom:-32px;
     left: 0;
+    }
   }
+  
   .portfolio__link {
     position:relative;
-  }
-  .portfolio__link.current::after {
-    content:"";
+    &.current::after {
+      content:"";
     width:100%;
     height:4px;
     background-color:$hoverTextColor; 
@@ -71,7 +71,9 @@
     display:block;
     bottom:-32px;
     left: 0;
+    }
   }
+  
   .contact__list {
     display:flex;
     margin-left: auto;
@@ -88,6 +90,10 @@
     margin-right:10px;
     align-items:center;
     transition:$transitionFill;
+    .header-mail:hover &,
+    .header-mail:focus & {
+      fill:$hoverTextColor;
+    }
   }
   
   
@@ -106,6 +112,11 @@
     margin-right:10px;
     align-items:center;
     transition:$transitionFill;
+    .header-phone:hover &,
+    .header-phone:focus & {
+      fill: $hoverTextColor;
+    }
+  
   }
   
   .header-phone {
@@ -119,11 +130,3 @@
     
   }
  
-  .header-mail:hover .envelope__symbol,
-  .header-mail:focus .envelope__symbol {
-    fill:$hoverTextColor;
-  }
-  .header-phone:hover .phone__symbol,
-  .header-phone:focus .phone__symbol {
-    fill: $hoverTextColor;
-  }

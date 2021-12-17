@@ -58,10 +58,11 @@
   .member-social__item {
     width:44px;
     height:44px;
+    & + & {
+      margin-left: 10px;
+    }
   }
-  .member-social__item + .member-social__item {
-    margin-left: 10px;
-  }
+  
   .member-social__link {
     width:100%;
     height:100%;
