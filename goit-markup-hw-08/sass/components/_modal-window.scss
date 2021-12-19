@@ -5,13 +5,12 @@
     height:100vh;
     background: rgba(0, 0, 0, 0.2);
     transition:opacity 1000ms, visibility 1000ms;
-    
+
   }
   
   .modal {
     position:absolute;
-    width: 528px;
-    min-height:581px;
+    
     background: $mainBackgroundColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -19,6 +18,20 @@
     left:50%;
     transform:translate(-50%, -50%);
     padding: 40px;
+
+    @media screen and (min-width:480px) {
+    width:450px;
+    height:609px;
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      width: 528px;
+      min-height:581px;
+    }
 
     .backdrop.is-hidden & {
         transform:scale(1.5) rotate(180deg) translate(1000px);
@@ -39,6 +52,9 @@
   justify-content: center;
   align-items: center;
   transition:$transitionFill; 
+
+  
+
   &:hover,
   &:focus {
   fill:$hoverTextColor;
@@ -49,12 +65,25 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     
     color:$mainTextColor;
     margin-bottom: 12px;
+
+    @media screen and (min-width:480px) {
+   line-height:1.5;
+
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      line-height: 1.15;
+     
+    }
   }
   .modal-form {
     font-style: normal;
@@ -68,15 +97,39 @@
   
   .form__name {
   position: absolute;
-  top: 75px;
-  
+
+
+  @media screen and (min-width:480px) {
+    top:112px;
+   
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      top: 75px;
+    }
   
   }
   .form__name--input {
-  position: absolute;
-  width: 448px;
-  height: 40px;
-  top:93px;
+    position: absolute;
+    height: 40px;
+     @media screen and (min-width:480px) {
+      width:370px;
+      top: 130px;
+     }
+ 
+     @media screen and (min-width:768px) {
+ 
+     }
+     
+     @media screen and (min-width:1200px) {
+      width: 448px;
+      top:93px;
+      
+     }
   
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline:none;
@@ -93,44 +146,97 @@
  
   .form__name--icon {
     position: absolute;
-    top:105px;
     left:55px;
+   
     transition:$transitionFill;
     .form__name--input:hover + &,
     .form__name--input:focus + & {
       fill:$hoverTextColor;
-    }
+       
+      }
+      @media screen and (min-width:480px) {
+        top:144px;
+      }
+  
+      @media screen and (min-width:768px) {
+  
+      }
+      
+      @media screen and (min-width:1200px) {
+        top:105px;
+      }
   }
  
   
   .form__tel {
     position: absolute;
-    top: 143px;
+    
+    @media screen and (min-width:480px) {
+    top:180px;
+
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      top: 143px;
+     
+    }
   }
   
   .form__tel--input {
     position: absolute;
-    width: 448px;
+    
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline:none;
     box-sizing: border-box;
     border-radius: 4px;
-    top: 161px;
+    
     padding-left:42px;
     transition: $transitionBorder;
     &:hover,
     &:focus {
       border:1px solid #2196F3;
     }
+    @media screen and (min-width:480px) {
+      width:370px;
+      top:198px;
+
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      width: 448px;
+      top: 161px;
+    }
   }
   
   
   .form__tel--icon {
     position: absolute;
-    top:172.26px;
+    
     left:54.27px;
     transition:$transitionFill;
+
+    @media screen and (min-width:480px) {
+      top:211.26px;
+
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      top:172.26px;
+     
+    }
 
     &:hover, 
     &:focus {
@@ -146,19 +252,46 @@
  
   .form__mail {
     position: absolute;
-    top: 211px;
+   
+    @media screen and (min-width:480px) {
+      top:248px;
+
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      top: 211px;
+     
+    }
   }
   .form__mail--input {
     position: absolute;
-    width: 448px;
+    
     height: 40px;
-    top: 229px;
+   
     background: $mainBackgroundColor;
     outline:none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left:42px;
     transition:$transitionBorder;
+
+    @media screen and (min-width:480px) {
+      width:370px;
+      top:266px;
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      width: 448px;
+      top: 229px;
+    }
 
     &:hover,
     &:focus {
@@ -168,9 +301,23 @@
   
   .form__mail--icon {
     position: absolute;
-    top:241px;
+    
     left:53.5px;
     transition:$transitionFill;
+    @media screen and (min-width:480px) {
+      top:280px;
+
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      top:241px;
+     
+    }
+
     &:hover, 
     &:focus {
       fill:$hoverTextColor;
@@ -185,12 +332,26 @@
 
   .form__comments {
   position: absolute;
-  top: 279px;
+  
+
+  @media screen and (min-width:480px) {
+  top:316px;
+
+  }
+
+  @media screen and (min-width:768px) {
+
+  }
+  
+  @media screen and (min-width:1200px) {
+  
+    top: 279px;
+  }
+
   }
   .comments__area {
   position: absolute;
-  top: 297px;
-  width: 448px;
+ 
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline:none;
@@ -199,6 +360,21 @@
   padding:12px 16px;
   resize:none;
   transition:$transitionBorder; 
+
+  @media screen and (min-width:480px) {
+  width:370px;
+  top: 334px;
+  }
+
+  @media screen and (min-width:768px) {
+
+  }
+  
+  @media screen and (min-width:1200px) {
+    top: 297px;
+    width: 448px;
+   
+  }
 
   &:hover,
   &:focus {
@@ -211,10 +387,24 @@
   .modal__check {
     position: absolute;
     left:10px;
-    top:442px;
+    
     &:checked + .check__text .check__item {
     background-color:$logoWeb-color;
     border:none;
+
+    @media screen and (min-width:480px) {
+      top: 474px;
+
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      top:442px;
+     
+    }
     }
      
  }
@@ -222,15 +412,30 @@
   .check__text {
     position: absolute;
     left:54px;
-    top:437px;
+  
   
     font-weight:400;
-    font-size: 14px;
+   
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
     display:flex;
     align-items: center;
+
+    @media screen and (min-width:480px) {
+      top: 474px;
+      font-size: 12px;
+
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      top:437px;
+      font-size: 14px;
+    }
   }
   .check__item {
     width:16px;
@@ -241,6 +446,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width:480px) {
+  
+
+    }
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+    
+     
+    }
     
   }
   
@@ -268,13 +487,28 @@
   width: 200px;
   height: 50px;
   position: absolute;
-  left: 164px;
-  top: 491px;
+ 
+  
   padding-top:10px;
   padding-bottom:10px;
   padding-left:56px;
   padding-right: 55px;
   border:none;
+
+  @media screen and (min-width:480px) {
+    left:125px;
+    top:519px;
+
+  }
+
+  @media screen and (min-width:768px) {
+
+  }
+  
+  @media screen and (min-width:1200px) {
+    left: 164px;
+    top: 491px;
+  }
   
   background-color: $sendButtonBackground;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

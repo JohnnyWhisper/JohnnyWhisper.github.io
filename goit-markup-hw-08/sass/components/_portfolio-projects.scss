@@ -1,19 +1,30 @@
 
 .projects__list {
-    display:flex;
-    flex-wrap: wrap;
+    
     list-style:none;
-    margin-top: -30px;
-    margin-left: -30px;
     padding: 0;
+
+    @media screen and (min-width:480px) {
+      
+    }
+   
+      @media screen and (min-width:768px) {
+  
+    }
+    
+      @media screen and (min-width:1200px) {
+      display:flex;
+      flex-wrap: wrap;
+      margin-top: -30px;
+      margin-left: -30px;
+    }
   }
   .card {
     display:flex;
     flex-direction:column;
     margin-top: 30px;
     margin-left: 30px;
-    max-width:370px;
-    max-height:404px;
+   
     transition: $transitionColor, $transitionBackgroundColor, $transitionBoxShadow;
     &:hover,
     &:focus {
@@ -23,6 +34,20 @@
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
     
+    @media screen and (min-width:480px) {
+      width:450px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+   
+      @media screen and (min-width:768px) {
+  
+    }
+    
+      @media screen and (min-width:1200px) {
+        max-width:370px;
+        max-height:404px;
+    }
   }
   
   .project__wrapper {
@@ -80,5 +105,17 @@
     border-bottom:1px solid #EEEEEE;
     border-left:1px solid #EEEEEE;
     border-right:1px solid #EEEEEE;
-    padding:24px;
+   
+
+    @media screen and (min-width:480px) {
+     padding:20px 24px;
+    }
+   
+      @media screen and (min-width:768px) {
+  
+    }
+    
+      @media screen and (min-width:1200px) {
+        padding:24px;
+    }
   }

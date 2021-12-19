@@ -1,29 +1,94 @@
 .we-do {
     position:relaive;
+
+    @media screen and (min-width:480px) {
+      
+    }
+   
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+     
+    }
+  
   }
   .we-do__list {
-    display:flex;
-    justify-content: space-between;
+    
+    @media screen and (min-width:480px) {
+      
+    }
+   
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      display:flex;
+      justify-content: space-between;
+  
+    }
   }
     
   .we-do__title {
     color: $mainTextColor;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom:50px;
+    @media screen and (min-width:480px) {
+      
+    }
+   
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+  
+    }
   }
   .we-do__thumb {
-    max-width: 370px;
-    max-height: 294px;
+   
     position:relative;
+
+    @media screen and (min-width:480px) {
+      min-width:450px;
+      margin-bottom: 30px;
+
+    }
+   
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+     
+      max-width: 370px;
+      max-height: 294px;
+    }
   }
   .we-do__photo {
     max-width: 100%;
     max-height: 100%;
+    @media screen and (min-width:480px) {
+      
+    }
+   
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+     
+  
+    }
   }
   .we-do__footer {
     position:absolute;
@@ -34,6 +99,18 @@
     align-items:center;
     justify-content:center;
     background-color: rgba(47, 48, 58, 0.8);
+    @media screen and (min-width:480px) {
+      
+    }
+   
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+     
+  
+    }
   }
 
   .we-do__paragraph {
@@ -46,4 +123,17 @@
   text-transform: uppercase;
   display:flex;
   color:$whiteTextColor;
+
+  @media screen and (min-width:480px) {
+      
+  }
+ 
+  @media screen and (min-width:768px) {
+
+  }
+  
+  @media screen and (min-width:1200px) {
+   
+
+  }
   }

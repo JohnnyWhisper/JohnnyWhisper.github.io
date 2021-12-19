@@ -1,5 +1,16 @@
 .footer-subscription__form {
-    margin-left: 93px;
+    
+    @media screen and (min-width:480px) {
+    }
+   
+      @media screen and (min-width:768px) {
+  
+    }
+    
+      @media screen and (min-width:1200px) {
+        margin-left: 93px;
+    }
+
   }
   .footer-subscription__title {
   font-style: normal;
@@ -11,17 +22,45 @@
   
   color:$mainTitleTextColor;
   margin-bottom: 20px;
+
+  @media screen and (min-width:480px) {
+    text-align: center;
+  }
+ 
+    @media screen and (min-width:768px) {
+
+  }
+  
+    @media screen and (min-width:1200px) {
+     
+  }
+
   }
   .footer-subscription__input {
     background-color: #2F303A;
-    width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left:16px;
     color:$mainTitleTextColor;
+
+    @media screen and (min-width:480px) {
+      width:450px;
+    }
    
+      @media screen and (min-width:768px) {
+  
+    }
+    
+      @media screen and (min-width:1200px) {
+        width: 358px;
+    }
+  
+  }
+
+  .subscription-wrap {
+    position: relative;
   }
   .footer-subscription__button {
     width: 200px;
@@ -40,11 +79,41 @@
   
     color:$whiteTextColor;
     margin-left:12px;
-    position:absolute;
+    
     border:none;
+
+    @media screen and (min-width:480px) {
+      margin-top: 20px;
+      position: relative;
+      margin-left: 140px;
+      margin-right: 140px;
+    }
+   
+      @media screen and (min-width:768px) {
+  
+    }
+    
+      @media screen and (min-width:1200px) {
+        position:absolute;
+    }
   }
   .footer-subscription__icon {
     position: absolute;
-    margin-top:13px;
-    margin-left: 160px;
+   
+
+    @media screen and (min-width:480px) {
+      position: absolute;
+      left:288px;
+      
+     
+    }
+   
+      @media screen and (min-width:768px) {
+  
+    }
+    
+      @media screen and (min-width:1200px) {
+        margin-top:13px;
+        margin-left: 160px;
+    }
   }

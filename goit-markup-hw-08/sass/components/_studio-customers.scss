@@ -1,20 +1,62 @@
 .customers {
-    padding-top:94px;
+    
+
+    @media screen and (min-width:480px) {
+      padding-top: 60px;
+    }
+   
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      padding-top:94px;
+  
+    }
   }
   .customers__title {
     color:$mainTextColor;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.7;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom:50px;
+
+    @media screen and (min-width:480px) {
+      padding-top: 60px;
+    }
+   
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      font-size: 36px;
+    line-height: 1.17;
+  
+    }
   
   }
   .customers__list {
-    display:flex;
-    justify-content:space-between;
+    
+    @media screen and (min-width:480px) {
+      display:flex;
+      flex-wrap: wrap;
+      justify-content:space-around;
+
+    }
+   
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      display:flex;
+      justify-content:space-between;
+  
+    }
   }
   .company__link {
     display:flex;
@@ -22,8 +64,6 @@
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px;
     transition: $transitionBorder;
     &:hover,
     &:focus {
@@ -33,13 +73,30 @@
     &:hover .company__logo,
     &:focus .company__logo {
    fill:$iconsCompanyHoverFill;
+
+  }
+    @media screen and (min-width:480px) {
+    width: 210px;
+    height: 92px;
+    margin-bottom: 30px;
+  }
+ 
+    @media screen and (min-width:768px) {
+
   }
   
+    @media screen and (min-width:1200px) {
+      width: 170px;
+      height: 92px;
+  }
+
   }
  
   .company__logo {
     fill:#AFB1B8;
     transition: $transitionFill;
+
+
   }
   
   

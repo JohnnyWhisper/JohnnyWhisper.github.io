@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,9 +13,9 @@
     <title>Главная</title>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
-                                                <!--Навигация-->
+                                              
         <nav class="header-navigation">
           <a class="logo-header" href="./index.html" lang="en"><span class="logo-header--web">Web</span><span class="logo-header-studio">Studio</span></a>
           <ul class="navigation__list">
@@ -29,7 +30,7 @@
             </li>
           </ul>
         </nav>
-                                                 <!--Контакты-->
+                                          
         <ul class="contact__list">
           <li> 
             <a class="link header-mail" href="mailto:info@devstudio.com"> <svg  class="envelope__symbol" width="16" height="12" >
@@ -41,16 +42,16 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
-                                                <!--Заказ услуг-->
+                                              
       <section class="service-order section">
         <div class="container service">
           <h1 class="service__title">Эффективные решения <br> для вашего бизнеса</h1>
           <button class="main-button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
-                                                <!--Характеристика работы-->
+                                               
       <section class="section work-characteristic">
         <div class="container">
           <ul class="characteristic__list">
@@ -135,7 +136,6 @@
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
-                                              <!--Члены команды-->
           <ul class="team__list">
             <li class="member__card">
               <img class="member__photo" src="./images/igor.jpg" 
@@ -345,9 +345,9 @@
     <footer class="footer">
       <div class="container footer-container">
         <section>
-                   <!--Логотип-->
+ 
         <a class="logo-footer" href="./index.html" lang="en"><span class="logo-footer__web">Web</span><span class="logo-footer__studio">Studio</span></a>
-                   <!--Контакты-->
+
         <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address> 
         <ul>
           <li class="footer__mail">
@@ -396,10 +396,13 @@
           <h4 class="footer-subscription__title">Подпишитесь на рассылку</h4>
         <label for="subscription-email"></label>
         <input type="email" name="subscription-email" id="subscription-email" class="footer-subscription__input" placeholder="E-mail">
-        <button type="submit" class="footer-subscription__button">Подписаться</button>
-        <svg class="footer-subscription__icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-icon-send"></use>
-        </svg>
+        <div class="subscription-wrap">
+          <button type="submit" class="footer-subscription__button">Подписаться</button>
+          <svg class="footer-subscription__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+          </svg>
+        </div>
+        
         </form>
       </section>
       </div>                           

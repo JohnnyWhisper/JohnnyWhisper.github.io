@@ -1,8 +1,5 @@
 .service-order {
-    display:flex;
     background-color:#2F303A;
-    padding-top:200px;
-    padding-bottom:200px;
     background-image: 
     linear-gradient( 
       rgba(47, 48, 58, 0.4),
@@ -10,30 +7,61 @@
     url(../images/hero-backgroung-image.jpg);
   
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: ;
     background-position: center;
-  
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width:768px) {
+
+    }
+
+    @media screen and (min-width:1200px) {
+      display:flex;
+      padding-top:200px;
+      padding-bottom:200px;
+      background-size: cover;
+    }
+
   }
+
   .service {
-    display:flex;
-    flex-direction:column;
+    
     align-items: center;
     justify-content:center;
+
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      display:flex;
+      flex-direction:column;
+    }
+
   
   }
   .service__title {
-    display:flex;
     font-weight: 900;
     font-style: normal;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:$mainTitleTextColor;
     text-align: center;
+    font-size:26px;
+    line-height: 1.61;
     margin:0 auto;
     margin-bottom: 30px;
+
+   
+    @media screen and (min-width:768px) {
+
+    }
+    
+    @media screen and (min-width:1200px) {
+      display:flex;
+      font-size:44px;
+    }
     
   }
   .main-button {
@@ -53,6 +81,8 @@
     &:hover,
     &:focus {
     background-color:$hoverTextColor;
+    display: flex;
+    align-items: center;
     }
   }
  
