@@ -212,15 +212,10 @@ ul > li {
 }
 
 .service {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .service {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .service__title {
@@ -265,8 +260,16 @@ ul > li {
   align-items: center;
 }
 
-.section.work-characteristic {
-  padding-top: 60px;
+@media screen and (min-width: 480px) {
+  .section.work-characteristic {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section.work-characteristic {
+    padding-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -275,15 +278,33 @@ ul > li {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .characteristic__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
-.characteristic__item {
-  margin-right: 15px;
-  margin-left: 15px;
+@media screen and (min-width: 1200px) {
+  .characteristic__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .characteristic__item {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .characteristic__item {
+    margin-right: 30px;
+    max-width: 354px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -293,20 +314,25 @@ ul > li {
 }
 
 .characteristic__link {
-  width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  .characteristic__link {
+    width: calc(100%-30px);
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .characteristic__link {
     width: 270px;
-    height: 120px;
+    justify-content: center;
   }
 }
 
@@ -341,8 +367,22 @@ ul > li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .characteristic__subtitle {
+    width: 270px;
+  }
+}
+
 .we-do {
   position: relaive;
+}
+
+@media screen and (min-width: 768px) {
+  .we-do__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -450,6 +490,14 @@ ul > li {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .team__list {
     display: flex;
@@ -463,6 +511,18 @@ ul > li {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .member__card {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .member__card {
+    margin-bottom: 30px;
+  }
+}
+
 .member__photo {
   background: url();
   border-radius: 0px;
@@ -471,6 +531,12 @@ ul > li {
 @media screen and (min-width: 480px) {
   .member__photo {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .member__photo {
+    max-width: 354px;
   }
 }
 
@@ -640,9 +706,23 @@ ul > li {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
@@ -660,6 +740,13 @@ ul > li {
     position: absolute;
     right: 163px;
     top: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
@@ -708,6 +795,12 @@ ul > li {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__mail {
+    margin-top: 8px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__mail {
     margin-top: 9px;
@@ -729,6 +822,12 @@ ul > li {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__tel {
+    margin-top: 8px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__tel {
     margin-top: 9px;
@@ -738,6 +837,13 @@ ul > li {
 @media screen and (min-width: 480px) {
   .footer-social {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -803,6 +909,14 @@ ul > li {
 .footer-social__link:hover, .footer-social__link:focus {
   fill: #FFFFFF;
   background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-subscription__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {
