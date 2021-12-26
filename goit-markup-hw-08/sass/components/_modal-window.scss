@@ -18,14 +18,13 @@
     left:50%;
     transform:translate(-50%, -50%);
     padding: 40px;
-
-    @media screen and (min-width:480px) {
     width:450px;
     height:609px;
-    }
-
+   
+    
     @media screen and (min-width:768px) {
-
+      width:450px;
+      height:609px;
     }
     
     @media screen and (min-width:1200px) {
@@ -70,11 +69,7 @@
     
     color:$mainTextColor;
     margin-bottom: 12px;
-
-    @media screen and (min-width:480px) {
-   line-height:1.5;
-
-    }
+    line-height:1.5;
 
     @media screen and (min-width:768px) {
 
@@ -97,13 +92,9 @@
   
   .form__name {
   position: absolute;
+  top:112px;
 
-
-  @media screen and (min-width:480px) {
-    top:112px;
-   
-    }
-
+ 
     @media screen and (min-width:768px) {
 
     }
@@ -116,13 +107,12 @@
   .form__name--input {
     position: absolute;
     height: 40px;
-     @media screen and (min-width:480px) {
-      width:370px;
-      top: 130px;
-     }
- 
+    width:calc(100%-80px);
+    top: 130px;
+    width:370px;
+
      @media screen and (min-width:768px) {
- 
+    
      }
      
      @media screen and (min-width:1200px) {
@@ -154,9 +144,8 @@
       fill:$hoverTextColor;
        
       }
-      @media screen and (min-width:480px) {
-        top:144px;
-      }
+      top:144px;
+     
   
       @media screen and (min-width:768px) {
   
@@ -170,11 +159,8 @@
   
   .form__tel {
     position: absolute;
-    
-    @media screen and (min-width:480px) {
     top:180px;
 
-    }
 
     @media screen and (min-width:768px) {
 
@@ -188,7 +174,8 @@
   
   .form__tel--input {
     position: absolute;
-    
+    width:370px;
+    top:198px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline:none;
@@ -201,14 +188,10 @@
     &:focus {
       border:1px solid #2196F3;
     }
-    @media screen and (min-width:480px) {
-      width:370px;
-      top:198px;
 
-    }
 
     @media screen and (min-width:768px) {
-
+  
     }
     
     @media screen and (min-width:1200px) {
@@ -220,14 +203,9 @@
   
   .form__tel--icon {
     position: absolute;
-    
+    top:211.26px;
     left:54.27px;
     transition:$transitionFill;
-
-    @media screen and (min-width:480px) {
-      top:211.26px;
-
-    }
 
     @media screen and (min-width:768px) {
 
@@ -252,11 +230,8 @@
  
   .form__mail {
     position: absolute;
+    top:248px;
    
-    @media screen and (min-width:480px) {
-      top:248px;
-
-    }
 
     @media screen and (min-width:768px) {
 
@@ -269,7 +244,8 @@
   }
   .form__mail--input {
     position: absolute;
-    
+    width:370px;
+    top:266px;
     height: 40px;
    
     background: $mainBackgroundColor;
@@ -279,13 +255,8 @@
     padding-left:42px;
     transition:$transitionBorder;
 
-    @media screen and (min-width:480px) {
-      width:370px;
-      top:266px;
-    }
-
     @media screen and (min-width:768px) {
-
+   
     }
     
     @media screen and (min-width:1200px) {
@@ -301,14 +272,10 @@
   
   .form__mail--icon {
     position: absolute;
-    
+    top:280px;
     left:53.5px;
     transition:$transitionFill;
-    @media screen and (min-width:480px) {
-      top:280px;
-
-    }
-
+  
     @media screen and (min-width:768px) {
 
     }
@@ -332,12 +299,8 @@
 
   .form__comments {
   position: absolute;
-  
-
-  @media screen and (min-width:480px) {
   top:316px;
 
-  }
 
   @media screen and (min-width:768px) {
 
@@ -351,7 +314,8 @@
   }
   .comments__area {
   position: absolute;
- 
+  width:370px;
+  top: 334px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline:none;
@@ -361,13 +325,9 @@
   resize:none;
   transition:$transitionBorder; 
 
-  @media screen and (min-width:480px) {
-  width:370px;
-  top: 334px;
-  }
 
   @media screen and (min-width:768px) {
-
+ 
   }
   
   @media screen and (min-width:1200px) {
@@ -387,15 +347,10 @@
   .modal__check {
     position: absolute;
     left:10px;
-    
+    top: 474px;
     &:checked + .check__text .check__item {
     background-color:$logoWeb-color;
     border:none;
-
-    @media screen and (min-width:480px) {
-      top: 474px;
-
-    }
 
     @media screen and (min-width:768px) {
 
@@ -415,18 +370,13 @@
   
   
     font-weight:400;
-   
+    top: 474px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
     display:flex;
     align-items: center;
-
-    @media screen and (min-width:480px) {
-      top: 474px;
-      font-size: 12px;
-
-    }
 
     @media screen and (min-width:768px) {
 
@@ -446,11 +396,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @media screen and (min-width:480px) {
-  
-
-    }
 
     @media screen and (min-width:768px) {
 
@@ -487,6 +432,9 @@
   width: 200px;
   height: 50px;
   position: absolute;
+  left:125px;
+  top:519px;
+
  
   
   padding-top:10px;
@@ -495,11 +443,7 @@
   padding-right: 55px;
   border:none;
 
-  @media screen and (min-width:480px) {
-    left:125px;
-    top:519px;
 
-  }
 
   @media screen and (min-width:768px) {
 

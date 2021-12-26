@@ -16,16 +16,14 @@
   .button__list  {
     display:flex;
     align-items:center;
-    
-
-    @media screen and (min-width:480px) {
-      flex-wrap: wrap;
-      margin-bottom:40px;
-      margin-left: 7px;
-    }
+    flex-wrap: wrap;
+    margin-bottom:40px;
+    margin-left: 7px;
+   
    
       @media screen and (min-width:768px) {
-  
+        justify-content: center;
+        margin-bottom: 30px;
     }
     
       @media screen and (min-width:1200px) {
@@ -56,19 +54,16 @@
     padding-right:22px;
     padding-bottom: 6px;
     transition: $transitionColor, $transitionBackgroundColor,  $transitionBoxShadow;
-
-    @media screen and (min-width:480px) {
-      margin-right: 8px;
-      margin-bottom: 15px;
-      font-weight: 700;
-    }
+    margin-right: 8px;
+    margin-bottom: 15px;
+    font-weight: 700;
    
       @media screen and (min-width:768px) {
   
     }
     
       @media screen and (min-width:1200px) {
-        margin-right: 8px;
+        
     }
   
 

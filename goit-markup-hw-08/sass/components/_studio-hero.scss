@@ -1,29 +1,69 @@
 .service-order {
     background-color:#2F303A;
-    background-image: 
-    linear-gradient( 
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    url(../images/hero-backgroung-image.jpg);
-  
+    
     background-repeat: no-repeat;
-    // background-size: ;
     background-position: center;
     padding-top: 118px;
     padding-bottom: 118px;
 
-    @media screen and (min-width:768px) {
+    background-image: 
+      linear-gradient( 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg-mobile.jpg);
 
+          @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: 
+                linear-gradient( 
+               rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)),
+               url(../images/hero-bg-mobile2x.jpg);
+             }
+
+
+    @media screen and (min-width:768px) {
+      background-image: 
+      linear-gradient( 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg-tablet.jpg);
+
+          @media (min-device-pixel-ratio: 2),
+                 (min-resolution: 192dpi),
+                 (min-resolution: 2dppx) {
+                 background-image: 
+                  linear-gradient( 
+                 rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                  url(../images/hero-bg-tablet2x.jpg);
+          }
     }
 
     @media screen and (min-width:1200px) {
+      background-image: 
+      linear-gradient( 
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg-desktop.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
+               background-image: 
+               linear-gradient( 
+               rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)),
+              url(../images/hero-bg-desktop2x.jpg);
+  
       display:flex;
       padding-top:200px;
       padding-bottom:200px;
       background-size: cover;
     }
-
   }
+}
 
   .service {
     display:flex;
@@ -36,12 +76,11 @@
     }
     
     @media screen and (min-width:1200px) {
-     
+
     
     }
-
-  
   }
+
   .service__title {
     font-weight: 900;
     font-style: normal;
