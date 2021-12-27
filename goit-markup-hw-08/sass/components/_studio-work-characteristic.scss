@@ -23,14 +23,14 @@
     
     @media screen and (min-width:1200px) {
       display:flex;
-      justify-content: space-between;
+      justify-content: center;
     }
 
   }
   .characteristic__item {
    
-      margin-right: 15px;
-      // margin-left: 15px;
+  margin-right: 15px;
+    
 
     @media screen and (min-width:768px) {
   

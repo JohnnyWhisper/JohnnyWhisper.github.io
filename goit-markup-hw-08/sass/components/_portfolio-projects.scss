@@ -23,7 +23,24 @@
     max-height:404px;
     max-width: 450px;
     margin-left: 15px;
-    margin-right: 15px;
+
+
+    @media screen and (min-width:768px) {
+      display:flex;
+      flex-direction:column;
+      max-width:354px;
+      max-height:404px; 
+      margin-left: 15px;
+     
+  }
+   
+      @media screen and (min-width:1200px) {
+      max-width:370px;
+      max-height:404px;
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    
 
     transition: $transitionColor, $transitionBackgroundColor, $transitionBoxShadow;
     &:hover,
@@ -34,22 +51,7 @@
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
     
-    @media screen and (min-width:768px) {
-      display:flex;
-      flex-direction:column;
-      width:354px;
-      height:404px; 
-      margin-left: 15px;
-      margin-right: 15px;
-  }
    
-    
-      @media screen and (min-width:1200px) {
-      max-width:370px;
-      max-height:404px;
-      margin-left: 30px;
-      margin-top: 30px;
-    }
   }
    
     
@@ -89,14 +91,14 @@
   }
   
   .project__image {
-    margin-top:0px;
+    margin:0px;
 
     @media screen and (min-width:768px) { 
-      align-content: 354px;
+      max-width: 354px;
     }
 
     @media screen and (min-width:1200px) { 
-      align-content: 370px;
+      max-width: 370px;
     }
   }
   

@@ -27,6 +27,7 @@
     
       @media screen and (min-width:1200px) {
         display:flex;
+        justify-content: center;
     }
   }
 
@@ -39,8 +40,11 @@
       align-items: center;
       flex-direction: column;
       flex-wrap:wrap;
-     
     }
+    @media screen and (min-width:1200px) {
+      text-align: start;
+      
+   }
     
   }
   .logo-footer {
@@ -64,6 +68,7 @@
        font-size: 26px;
        line-height: 1.19;
        margin-bottom: 20px;
+       text-align: start;
        
     }
    
