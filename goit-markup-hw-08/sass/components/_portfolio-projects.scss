@@ -1,8 +1,9 @@
 
 .projects__list {
-    
+  
     list-style:none;
     padding: 0;
+    
 
       @media screen and (min-width:768px) {
         display:flex;
@@ -13,14 +14,14 @@
       display:flex;
       flex-wrap: wrap;
       margin-top: -30px;
-      margin-left: -30px;
+      margin-left: 30px;
     }
   }
   .card {
     display:flex;
     flex-direction:column;
-  
-    width:calc(100%-30px);
+    max-height:404px;
+    max-width: 450px;
     margin-left: 15px;
     margin-right: 15px;
 
@@ -34,11 +35,12 @@
     }
     
     @media screen and (min-width:768px) {
-      margin-left: auto;
-      margin-right: auto;
-      max-width:354px;
-      max-height:294px;
-     
+      display:flex;
+      flex-direction:column;
+      width:354px;
+      height:404px; 
+      margin-left: 15px;
+      margin-right: 15px;
   }
    
     
@@ -56,6 +58,11 @@
   .project__wrapper {
     position:relative;
     overflow:hidden;
+
+      @media screen and (min-width:768px) {
+        width:354px;
+      }
+
   }
   
   .project__text {
@@ -82,11 +89,12 @@
   }
   
   .project__image {
-    align-content: calc(100%-30px);
     margin-top:0px;
+
     @media screen and (min-width:768px) { 
       align-content: 354px;
     }
+
     @media screen and (min-width:1200px) { 
       align-content: 370px;
     }
@@ -101,6 +109,7 @@
     color: $mainTextColor;
     margin-bottom: 4px;
   }
+
   .project__subtitle {
     font-style: normal;
     font-size: 16px;
@@ -114,11 +123,8 @@
     border-bottom:1px solid #EEEEEE;
     border-left:1px solid #EEEEEE;
     border-right:1px solid #EEEEEE;
+    padding:20px 24px;
    
-
-    @media screen and (min-width:480px) {
-     padding:20px 24px;
-    }
    
       @media screen and (min-width:768px) {
   

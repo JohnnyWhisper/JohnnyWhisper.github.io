@@ -56,22 +56,10 @@
     justify-content: center;
     transition: $transitionBorder;
     margin-bottom: 30px;
-    
-    &:hover,
-    &:focus {
-      border: 1px solid $hoverTextColor;
-      border-radius: 4px;
-    }
-    &:hover .company__logo,
-    &:focus .company__logo {
-   fill:$iconsCompanyHoverFill;
-   width: 210px;
-   height: 92px;
+    width: 210px;
+    height: 92px;
 
 
-  }
-  
- 
     @media screen and (min-width:768px) {
       width: 226px;
       height: 92px;
@@ -82,6 +70,18 @@
       height: 92px;
   }
 
+    
+    &:hover,
+    &:focus {
+      border: 1px solid $hoverTextColor;
+      border-radius: 4px;
+    }
+    &:hover .company__logo,
+    &:focus .company__logo {
+   fill:$iconsCompanyHoverFill;
+  
+  }
+  
   }
  
   .company__logo {
