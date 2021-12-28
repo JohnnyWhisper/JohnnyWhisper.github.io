@@ -335,6 +335,11 @@ ul > li {
   margin-top: 302px;
 }
 
+.mob-menu__connect:hover, .mob-menu__connect:focus {
+  font-size: 34px;
+  color: #2196F3;
+}
+
 .mob-menu__phone {
   margin-bottom: 32px;
 }
@@ -500,7 +505,7 @@ ul > li {
 @media screen and (min-width: 1200px) {
   .characteristic__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
@@ -516,7 +521,7 @@ ul > li {
 
 @media screen and (min-width: 1200px) {
   .characteristic__item {
-    margin-right: 30px;
+    margin-right: 15px;
   }
 }
 
@@ -1180,7 +1185,7 @@ ul > li {
 
 @media screen and (min-width: 1200px) {
   .footer-subscription__button {
-    align-items: left;
+    align-items: start;
   }
 }
 
@@ -1287,6 +1292,8 @@ ul > li {
 @media screen and (min-width: 1200px) {
   .projects__list {
     display: flex;
+    justify-content: center;
+    flex-basis: calc(100%/3-60px);
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: 30px;
