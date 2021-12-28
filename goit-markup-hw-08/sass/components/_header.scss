@@ -179,6 +179,10 @@ ul > li {
   stroke-width: 0;
   border:none;
   background-color: transparent;
+  &:hover,
+  &:focus {
+    fill:$hoverTextColor;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -190,6 +194,9 @@ ul > li {
 }
 
 .mob-menu {
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
   position: fixed;
   background-color: #ffff;
   top: 0;
@@ -258,7 +265,7 @@ ul > li {
   line-height: 1.7;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-top: 302px;
+  margin-top: auto;
   &:hover,
   &:focus {
     font-size: 34px;
