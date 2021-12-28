@@ -43,6 +43,8 @@
       flex-wrap:wrap;
     }
     @media screen and (min-width:1200px) {
+      display: flex;
+      align-items: start;
      
       
      
@@ -71,7 +73,7 @@
        font-size: 26px;
        line-height: 1.19;
        margin-bottom: 20px;
-      text-align: left;
+       text-align: left;
       
        
     }
@@ -90,7 +92,6 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color:$addressTextColor;
-    margin-top:20px;
     text-align: center;
 
    
@@ -99,7 +100,6 @@
     }
     
       @media screen and (min-width:1200px) {
-       margin-top: 20px;
        text-align: left;
     }
   
@@ -120,7 +120,7 @@
     
       @media screen and (min-width:1200px) {
         margin-top: 9px;
-        text-align: start;
+        text-align: left;
     }
   
   }

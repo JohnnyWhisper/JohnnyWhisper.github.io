@@ -177,6 +177,8 @@ ul > li {
 .open-menu__btn {
   margin-left: auto;
   stroke-width: 0;
+  border:none;
+  background-color: transparent;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -213,6 +215,12 @@ ul > li {
   position: absolute;
   top:21px;
   right:25.33px;
+  border:none;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    fill:$hoverTextColor;
+  }
 }
 
 
@@ -227,6 +235,7 @@ ul > li {
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 35.71px;
 }
 .mob-menu__portfolio {
  

@@ -37,6 +37,14 @@
   }
 
   }
+
+  .subscription__items {
+
+    @media screen and (min-width:1200px) {
+      display: flex;
+    
+  }
+}
   .footer-subscription__input {
     background-color: #2F303A;
     height: 50px;
@@ -55,6 +63,8 @@
     }
     
       @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+        margin-right: 12px;
         width: 358px;
     }
   
@@ -118,10 +128,10 @@
       position: absolute;
       margin-top:13px;
       margin-left:130px;
-    }
+      }
     
       @media screen and (min-width:1200px) {
         margin-top:13px;
         margin-left: 130px;
-    }
+      }
   }
