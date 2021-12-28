@@ -351,13 +351,18 @@ ul > li {
   margin-top: auto;
 }
 
-.mob-menu__connect:hover, .mob-menu__connect:focus {
+.mob-menu__phone {
+  margin-bottom: 32px;
+}
+
+.mob-menu__phone:hover, .mob-menu__phone:focus {
   font-size: 34px;
   color: #2196F3;
 }
 
-.mob-menu__phone {
-  margin-bottom: 32px;
+.mob-menu__mail:hover, .mob-menu__mail:focus {
+  font-size: 34px;
+  color: #2196F3;
 }
 
 .mob-menu__social {

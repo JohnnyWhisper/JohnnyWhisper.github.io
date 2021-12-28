@@ -266,6 +266,12 @@ ul > li {
   letter-spacing: 0.02em;
   color: #757575;
   margin-top: auto;
+ 
+}
+
+
+.mob-menu__phone {
+  margin-bottom: 32px;
   &:hover,
   &:focus {
     font-size: 34px;
@@ -274,14 +280,14 @@ ul > li {
   }
 }
 
-
-.mob-menu__phone {
-  margin-bottom: 32px;
+.mob-menu__mail {
+  &:hover,
+  &:focus {
+    font-size: 34px;
+ 
+    color: #2196F3;
+  }
 }
-
-// .mob-menu__mail {
-
-// }
 
 .mob-menu__social {
   display: flex;
