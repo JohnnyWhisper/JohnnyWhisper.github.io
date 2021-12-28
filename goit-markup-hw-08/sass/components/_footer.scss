@@ -26,8 +26,9 @@
     }
     
       @media screen and (min-width:1200px) {
+        width:1200px;
         display:flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
   }
 
@@ -42,7 +43,9 @@
       flex-wrap:wrap;
     }
     @media screen and (min-width:1200px) {
-      text-align: start;
+     
+      
+     
       
    }
     
@@ -68,7 +71,8 @@
        font-size: 26px;
        line-height: 1.19;
        margin-bottom: 20px;
-       text-align: start;
+      text-align: left;
+      
        
     }
    
@@ -96,6 +100,7 @@
     
       @media screen and (min-width:1200px) {
        margin-top: 20px;
+       text-align: left;
     }
   
   }
@@ -115,6 +120,7 @@
     
       @media screen and (min-width:1200px) {
         margin-top: 9px;
+        text-align: start;
     }
   
   }
@@ -127,12 +133,10 @@
     color: $footerContactsTextColor;
     text-align: center;
     margin-top: 8px;
-   
-      @media screen and (min-width:768px) {
-      
-    }
+ 
     
       @media screen and (min-width:1200px) {
+        text-align: left;
         margin-top: 9px;
     }
   }
@@ -169,7 +173,7 @@
   }
   
     @media screen and (min-width:1200px) {
-     
+     text-align: left;
   }
   }
   .footer-social__list {

@@ -1,10 +1,11 @@
 
+
 .projects__list {
   
     list-style:none;
     padding: 0;
     
-
+ 
       @media screen and (min-width:768px) {
         display:flex;
         flex-wrap: wrap;
@@ -12,6 +13,7 @@
     
       @media screen and (min-width:1200px) {
       display:flex;
+      justify-content: center;
       flex-wrap: wrap;
       margin-top: -30px;
       margin-left: 30px;
@@ -133,6 +135,6 @@
     }
     
       @media screen and (min-width:1200px) {
-        padding:24px;
+        padding: 24px;
     }
   }

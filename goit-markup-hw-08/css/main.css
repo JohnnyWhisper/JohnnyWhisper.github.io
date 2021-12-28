@@ -279,6 +279,9 @@ ul > li {
   width: 100vw;
   height: 100vh;
   z-index: 5;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -293,16 +296,32 @@ ul > li {
   }
 }
 
+.close-menu__btn {
+  position: absolute;
+  top: 21px;
+  right: 25.33px;
+}
+
 .mob-menu__item {
   font-size: 40px;
   line-height: 1.17;
+  margin-bottom: 32px;
 }
 
 .mob-menu__studio {
-  margin-bottom: 35.71px;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.mob-menu__portfolio {
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.mob-menu__contacts {
+  font-weight: 500;
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -313,6 +332,53 @@ ul > li {
   line-height: 1.7;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-top: 302px;
+}
+
+.mob-menu__phone {
+  margin-bottom: 32px;
+}
+
+.mob-menu__social {
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+}
+
+.mob-menu__item {
+  margin-right: 20px;
+}
+
+.mob-menu__instagram {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mob-menu__twitter {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mob-menu__facebook {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mob-menu__linkedin {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .service-order {
@@ -827,8 +893,9 @@ ul > li {
 
 @media screen and (min-width: 1200px) {
   .footer-container {
+    width: 1200px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
@@ -843,12 +910,6 @@ ul > li {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer__links {
-    text-align: start;
   }
 }
 
@@ -876,7 +937,7 @@ ul > li {
     font-size: 26px;
     line-height: 1.19;
     margin-bottom: 20px;
-    text-align: start;
+    text-align: left;
   }
 }
 
@@ -901,6 +962,7 @@ ul > li {
 @media screen and (min-width: 1200px) {
   .footer__address {
     margin-top: 20px;
+    text-align: left;
   }
 }
 
@@ -923,6 +985,7 @@ ul > li {
 @media screen and (min-width: 1200px) {
   .footer__mail {
     margin-top: 9px;
+    text-align: start;
   }
 }
 
@@ -938,6 +1001,7 @@ ul > li {
 
 @media screen and (min-width: 1200px) {
   .footer__tel {
+    text-align: left;
     margin-top: 9px;
   }
 }
@@ -970,6 +1034,12 @@ ul > li {
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .join-us {
+    text-align: left;
+  }
 }
 
 .footer-social__list {
@@ -1025,7 +1095,6 @@ ul > li {
 
 @media screen and (min-width: 1200px) {
   .footer-subscription__form {
-    display: inline;
     margin-left: 93px;
   }
 }
@@ -1040,6 +1109,12 @@ ul > li {
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscription__title {
+    text-align: left;
+  }
 }
 
 .footer-subscription__input {
@@ -1078,6 +1153,13 @@ ul > li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription-wrap {
+    position: relative;
+    display: flex;
+  }
+}
+
 .footer-subscription__button {
   width: 200px;
   height: 50px;
@@ -1098,7 +1180,7 @@ ul > li {
 
 @media screen and (min-width: 1200px) {
   .footer-subscription__button {
-    position: absolute;
+    align-items: left;
   }
 }
 
@@ -1120,7 +1202,7 @@ ul > li {
 @media screen and (min-width: 1200px) {
   .footer-subscription__icon {
     margin-top: 13px;
-    margin-left: 160px;
+    margin-left: 130px;
   }
 }
 
