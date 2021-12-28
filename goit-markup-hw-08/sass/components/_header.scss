@@ -294,8 +294,10 @@ ul > li {
   flex-direction: row;
   margin-top: 64px;
 }
-.mob-menu__item {
-  margin-right: 20px;
+.mob-menu__networks {
+  margin-right: 10px;
+ 
+
 }
 
 .mob-menu__instagram {
@@ -304,13 +306,17 @@ ul > li {
   line-height:1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 .mob-menu__twitter {
   font-weight: 500;
   font-size: 18px;
   line-height:1.22;
   letter-spacing: 0.02em;
-  color: #2196F3
+  color: #2196F3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
 .mob-menu__facebook {
@@ -318,7 +324,9 @@ ul > li {
   font-size: 18px;
   line-height:1.22;
   letter-spacing: 0.02em;
-  color: #2196F3
+  color: #2196F3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
 .mob-menu__linkedin {
@@ -326,5 +334,5 @@ ul > li {
   font-size: 18px;
   line-height:1.22;
   letter-spacing: 0.02em;
-  color: #2196F3
+  color: #2196F3;
 }
