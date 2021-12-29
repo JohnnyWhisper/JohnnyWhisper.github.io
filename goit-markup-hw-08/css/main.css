@@ -1190,9 +1190,9 @@ ul > li {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 450px) {
   .footer-subscription__input {
-    width: 300px;
+    width: 420px;
   }
 }
 
