@@ -39,9 +39,13 @@
   }
 
   .subscription__items {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
 
     @media screen and (min-width:1200px) {
       display: flex;
+      flex-direction: row;
     
   }
 }
@@ -53,8 +57,9 @@
     border-radius: 4px;
     padding-left:16px;
     color:$mainTitleTextColor;
-    width:calc(100%-30px);
+    width:450px;
     margin-bottom: 20px;
+    
 
    
    
@@ -72,7 +77,8 @@
 
   .subscription-wrap {
     position: relative;
-
+    display: flex;
+    justify-content:center;
 
      @media screen and (min-width:768px) {
       position: relative;
@@ -99,7 +105,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    align-items: center;
+    justify-content:center;
     letter-spacing: 0.06em;
     padding-left:29px;
     padding-right: 62px;;
@@ -121,7 +127,7 @@
   .footer-subscription__icon {
     position: absolute;
     margin-top:13px;
-    margin-left:-45px;
+    margin-left:148px;
     z-index:3;
    
       @media screen and (min-width:768px) {

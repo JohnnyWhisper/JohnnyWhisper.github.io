@@ -541,8 +541,14 @@ ul > li {
   }
 }
 
+.characteristic__item {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 @media screen and (min-width: 768px) {
   .characteristic__item {
+    margin-left: 0;
     max-width: 354px;
   }
 }
@@ -646,6 +652,10 @@ ul > li {
   max-width: 370px;
   max-height: 294px;
   margin-right: 30px;
+}
+
+.designer-resolutions {
+  margin-right: 0;
 }
 
 .we-do__photo {
@@ -947,6 +957,12 @@ ul > li {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .footer__links {
+    padding-left: 30px;
+  }
+}
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -1149,9 +1165,16 @@ ul > li {
   }
 }
 
+.subscription__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media screen and (min-width: 1200px) {
   .subscription__items {
     display: flex;
+    flex-direction: row;
   }
 }
 
@@ -1163,7 +1186,7 @@ ul > li {
   border-radius: 4px;
   padding-left: 16px;
   color: #ffffff;
-  width: calc(100%-30px);
+  width: 450px;
   margin-bottom: 20px;
 }
 
@@ -1183,6 +1206,8 @@ ul > li {
 
 .subscription-wrap {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1210,7 +1235,7 @@ ul > li {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
+  justify-content: center;
   letter-spacing: 0.06em;
   padding-left: 29px;
   padding-right: 62px;
@@ -1227,7 +1252,7 @@ ul > li {
 .footer-subscription__icon {
   position: absolute;
   margin-top: 13px;
-  margin-left: -45px;
+  margin-left: 148px;
   z-index: 3;
 }
 
@@ -1275,9 +1300,9 @@ ul > li {
 
 @media screen and (min-width: 1200px) {
   .button__list {
-    padding-top: 94px;
     justify-content: center;
     margin-bottom: 56px;
+    margin-left: 0;
   }
 }
 
@@ -1328,10 +1353,16 @@ ul > li {
   .projects__list {
     width: 1200px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-basis: calc(100%/3-60px);
     flex-wrap: wrap;
     margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects__list {
+    margin-left: 200px;
   }
 }
 
@@ -1358,7 +1389,6 @@ ul > li {
   .card {
     max-width: 370px;
     max-height: 404px;
-    margin-left: 30px;
     margin-top: 30px;
   }
 }
