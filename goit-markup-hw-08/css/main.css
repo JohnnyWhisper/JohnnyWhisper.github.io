@@ -196,6 +196,12 @@ ul > li {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contact__list {
     margin-right: 215px;
   }
 }
@@ -535,18 +541,18 @@ ul > li {
   }
 }
 
-.characteristic__item {
-  margin-right: 15px;
-}
-
 @media screen and (min-width: 768px) {
   .characteristic__item {
     max-width: 354px;
   }
 }
 
+.characteristic__item:not(:last-child) {
+  margin-right: 15px;
+}
+
 @media screen and (min-width: 1200px) {
-  .characteristic__item {
+  .characteristic__item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -624,13 +630,6 @@ ul > li {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 1200px) {
-  .we-do__list {
-    display: flex;
-    justify-content: center;
-  }
-}
-
 .we-do__title {
   color: #212121;
   font-style: normal;
@@ -646,12 +645,7 @@ ul > li {
   position: relative;
   max-width: 370px;
   max-height: 294px;
-}
-
-@media screen and (min-width: 1200px) {
-  .we-do__thumb {
-    margin-right: 30px;
-  }
+  margin-right: 30px;
 }
 
 .we-do__photo {
@@ -744,6 +738,8 @@ ul > li {
   .member__card {
     width: 270px;
     margin-bottom: 30px;
+  }
+  .member__card:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -861,7 +857,7 @@ ul > li {
 }
 
 @media screen and (min-width: 1200px) {
-  .company {
+  .company:not(:last-child) {
     margin-right: 30px;
   }
 }
