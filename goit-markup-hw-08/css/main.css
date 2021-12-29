@@ -1510,6 +1510,12 @@ ul > li {
   height: 609px;
 }
 
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 420px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
