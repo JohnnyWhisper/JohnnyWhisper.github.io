@@ -86,6 +86,12 @@ a {
 
 @media screen and (min-width: 1200px) {
   .logo-header {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .logo-header {
     margin-left: 215px;
   }
 }
@@ -954,12 +960,7 @@ ul > li {
   .footer__links {
     display: flex;
     align-items: start;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .footer__links {
-    padding-left: 30px;
+    padding-left: 15px;
   }
 }
 
@@ -1192,7 +1193,7 @@ ul > li {
 
 @media screen and (max-width: 450px) {
   .footer-subscription__input {
-    width: 420px;
+    width: 300px;
   }
 }
 

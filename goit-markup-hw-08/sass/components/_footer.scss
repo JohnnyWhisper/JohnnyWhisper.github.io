@@ -6,15 +6,8 @@
     position: relative;
 
   
-   
-      @media screen and (min-width:768px) {
-  
-    }
-    
-      @media screen and (min-width:1200px) {
-       
-    }
   }
+
   .footer-container {
    
 
@@ -45,12 +38,10 @@
     @media screen and (min-width:1200px) {
       display: flex;
       align-items: start;
+      padding-left: 15px;
       
    }
-   @media screen and (min-width:1600px) {
-    padding-left: 30px;
-   }
-
+   
     
   }
   .logo-footer {
@@ -84,9 +75,12 @@
   .logo-footer__web {
     color:$logoWeb-color;
   }
+
+
   .logo-footer__studio {
     color:$mainTitleTextColor;
   }
+
   .footer__address {
     font-style: normal;
     font-size: 14px;
@@ -95,16 +89,14 @@
     color:$addressTextColor;
     text-align: center;
 
-   
-      @media screen and (min-width:768px) {
-  
-    }
     
       @media screen and (min-width:1200px) {
        text-align: left;
     }
   
   }
+
+
   .footer__mail {
     font-style: normal;
     font-size: 14px;
@@ -156,6 +148,7 @@
         margin-left:70px;
     }
   }
+
   .join-us {
   font-style: normal;
   font-weight: 700;
@@ -167,26 +160,18 @@
   margin-bottom:20px;
   text-align: center;
 
- 
- 
-    @media screen and (min-width:768px) {
-
-  }
   
     @media screen and (min-width:1200px) {
      text-align: left;
+    }
   }
-  }
+
   .footer-social__list {
       display: flex;
       justify-content: center;
       margin-bottom: 60px;
   
    
-      @media screen and (min-width:768px) {
-  
-    }
-    
       @media screen and (min-width:1200px) {
         display: flex;
     }

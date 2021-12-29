@@ -27,10 +27,6 @@
   margin-bottom: 20px;
   text-align: center;
 
- 
-    @media screen and (min-width:768px) {
-
-  }
   
     @media screen and (min-width:1200px) {
      text-align: left;
@@ -62,7 +58,7 @@
     
 
     @media screen and (max-width:450px) {
-      width:420px;
+      width:300px;
     }
    
       @media screen and (min-width:768px) {
@@ -115,17 +111,12 @@
     color:$whiteTextColor;
     border:none;
   
-  
-   
-      @media screen and (min-width:768px) {
-     
-
-    }
     
       @media screen and (min-width:1200px) {
       align-items:start;
     }
   }
+  
   .footer-subscription__icon {
     position: absolute;
     margin-top:13px;
