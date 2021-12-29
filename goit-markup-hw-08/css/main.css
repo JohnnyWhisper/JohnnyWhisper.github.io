@@ -1190,6 +1190,12 @@ ul > li {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 320px) {
+  .footer-subscription__input {
+    width: calc(100%-30px);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-subscription__input {
     width: 450px;
@@ -1502,6 +1508,12 @@ ul > li {
   padding: 40px;
   width: 450px;
   height: 609px;
+}
+
+@media screen and (min-width: 320px) {
+  .modal {
+    width: calc(100%-30px);
+  }
 }
 
 @media screen and (min-width: 768px) {
