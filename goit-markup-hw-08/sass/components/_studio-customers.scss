@@ -51,8 +51,14 @@
   }
 
   .company {
+    margin-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+    
+    }
 
     @media screen and (min-width:1200px) {
+      margin-bottom: 0px;
       &:not(:last-child) {
         margin-right: 30px;
       }
@@ -67,7 +73,6 @@
     align-items: center;
     justify-content: center;
     transition: $transitionBorder;
-    margin-bottom: 30px;
     width: 210px;
     height: 92px;
 

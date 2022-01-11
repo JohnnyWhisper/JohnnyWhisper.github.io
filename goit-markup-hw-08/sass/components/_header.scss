@@ -26,13 +26,8 @@ a {
     font-size: 24px;
   }
 
-  @media screen and (min-width: 1200px) {
-    margin-left: 15px;
-  }
 
-  @media screen and (min-width: 1600px) {
-    margin-left: 215px;
-  }
+ 
 }
 .logo-header--web {
   color: $logoWeb-color;
@@ -129,9 +124,7 @@ ul > li {
     
     margin-left: auto;
   }
-  @media screen and (min-width: 1600px) {
-    margin-right: 215px;
-  }
+  
 }
 .envelope__symbol {
   display: flex;

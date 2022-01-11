@@ -6,6 +6,7 @@
     position: relative;
 
   
+  
   }
 
   .footer-container {
@@ -27,7 +28,7 @@
 
   .footer__links {
     text-align: center;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
 
     @media screen and (min-width:768px) {
       display: flex;
@@ -38,7 +39,7 @@
     @media screen and (min-width:1200px) {
       display: flex;
       align-items: start;
-      padding-left: 15px;
+     width:231px;
       
    }
    
