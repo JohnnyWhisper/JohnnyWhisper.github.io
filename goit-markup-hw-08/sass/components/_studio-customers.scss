@@ -1,8 +1,9 @@
 .customers {
-  padding-top: 60px;
+  padding-top: 0;
 
    
     @media screen and (min-width:768px) {
+padding-top: 0;
 
     }
     
@@ -19,7 +20,7 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom:50px;
+    margin-bottom:30px;
     padding-top: 60px;
 
 
@@ -32,7 +33,7 @@
       font-size: 36px;
     line-height: 1.17;
     padding-top: 0;
-  
+    margin-bottom:50px;
     }
   
   }
@@ -45,7 +46,7 @@
     
     @media screen and (min-width:1200px) {
       display:flex;
-      justify-content:center;
+     
   
     }
   }
@@ -66,6 +67,8 @@
   
     }
   }
+
+
   .company__link {
     display:flex;
     border: 1px solid #AFB1B8;
@@ -108,4 +111,16 @@
 
   }
   
-  
+  .company-four {
+
+    @media screen and (min-width:768px) {
+    margin-bottom: 0;
+    }
+  }
+  .company-five {
+    margin-bottom: 0;
+  }
+
+  .company-six {
+    margin-bottom: 0;
+  }
