@@ -9,16 +9,6 @@ console.log(controls);
 const inputEl = document.querySelector("input");
 console.log(inputEl);
 
-console.log(inputEl.step);
-
-let amount;
-
-inputEl.addEventListener('input', (event) => {
-  amount = event.currentTarget.value;
-
-  console.log(amount);
-  
-})
 
 
 const btnCreate = document.querySelector("button[data-create]");
@@ -31,21 +21,38 @@ const divBoxes = document.querySelector("#boxes");
 console.log(divBoxes);
 
 
-const createBoxes = (amount) => {
-  const items = [];
+let amount =0;
 
-  for (let i=1; i <= amount; i+=1) {
-    const color = getRandomHexColor();
+
+inputEl.addEventListener('input', (event) => {
+  const amountStr = event.currentTarget.value;
+  amount = Number(amountStr);
+  console.log(amount);
+
+})
+
+
+const createBoxes = (amount) => {
+ 
+  const boxesArray = [];
+
+  for (let i=0; i <5; i += 1) {
+
     const boxEl = document.createElement("div");
+    const color = getRandomHexColor();
     boxEl.style.backgroundColor = color;
     boxEl.style.width = "30px";
     boxEl.style.height = "30px";
-    items.push(boxEl);
+    boxEl.style.margin ="5px";
+
+
+    boxesArray.push(boxEl);
 
   }
 
-  divBoxes.append(...items);
-  
+  divBoxes.append(... boxesArray);
+  console.log(boxesArray);
+
 };
 
 
