@@ -21,7 +21,7 @@ const divBoxes = document.querySelector("#boxes");
 console.log(divBoxes);
 
 
-let amount =0;
+let amount;
 
 
 inputEl.addEventListener('input', (event) => {
@@ -41,10 +41,10 @@ const createBoxes = (amount) => {
     const boxEl = document.createElement("div");
     const color = getRandomHexColor();
     boxEl.style.backgroundColor = color;
+
     boxEl.style.width = "30px";
     boxEl.style.height = "30px";
     boxEl.style.margin ="5px";
-
 
     boxesArray.push(boxEl);
 
