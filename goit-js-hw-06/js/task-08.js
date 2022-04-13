@@ -2,23 +2,6 @@ const loginFormEl = document.querySelector(".login-form");
 console.log(loginFormEl);
 
 
-
-const emailInputEl = loginFormEl.firstElementChild;
-console.log(emailInputEl);
-
-
-const emailPasswordEl = emailInputEl.nextElementSibling;
-console.log(emailPasswordEl);
-
-const BtnEl = loginFormEl.lastElementChild;
-console.log(BtnEl);
-
-
-console.log(loginFormEl.elements);
-
-
-
-
 loginFormEl.addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -37,5 +20,5 @@ loginFormEl.addEventListener('submit', (event) => {
     
     console.log(userData);
 
-   loginFormEl.reset();
+   event.currentTarget.reset();
 })
