@@ -16,13 +16,11 @@ console.log(incrementBtn);
 decrementBtn.addEventListener('click', () => {
     
    counterValueElement.textContent = counterValue -= 1;
-   return counterValueElement.textContent;
 });
 
 
 incrementBtn.addEventListener('click', () => {
     counterValueElement.textContent = counterValue += 1;
-    return counterValueElement.textContent;
 });
 
 
