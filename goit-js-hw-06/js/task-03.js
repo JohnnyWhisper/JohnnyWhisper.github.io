@@ -18,12 +18,13 @@ console.log(galleryList);
 
 const createGallery = ({url, alt}) => {
   const galleryEl = document.createElement("li");
-  galleryList.append(galleryEl);
-  galleryEl.insertAdjacentHTML("beforebegin", `<img class="gallery-img" src ="${url}" alt ="${alt}"/>`)
-
+  galleryEl.insertAdjacentHTML("afterbegin", `<img class="gallery-img" src ="${url}" alt ="${alt}"/>`)
+  
+  
   return galleryEl;
 };
 
 const galleryElements = images.map(createGallery);
 console.log(galleryElements);
 
+galleryList.append(...galleryElements);

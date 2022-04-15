@@ -29,6 +29,10 @@ button {
   list-style:none;
 }
 
+.gallery-img {
+  width: 100vw;
+}
+
 .gallery-img:not(:last-child) {
   margin-bottom: 10px;
 }
