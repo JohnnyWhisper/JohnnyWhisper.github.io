@@ -10,5 +10,10 @@ console.log(outputEl);
 
 inputEl.addEventListener('input', (event) => {
 
+if (event.currentTarget.value !== '') {
     outputEl.textContent = event.currentTarget.value;
+} else {
+    outputEl.textContent = "Anonymous";
+}  
+   
 });
