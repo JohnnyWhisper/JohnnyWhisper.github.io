@@ -21,11 +21,13 @@ const divBoxes = document.querySelector("#boxes");
 console.log(divBoxes);
 
 
+
 inputEl.addEventListener('input', getInputValue);
 
 function getInputValue() {
   const amount = inputEl.value;
-
+ 
+ 
   createBoxes(amount);
 }
 
@@ -48,7 +50,6 @@ const createBoxes = (amount) => {
     boxEl.style.width =  `${size}px`;
     boxEl.style.height= `${size}px`;
 
-
     boxEl.style.margin ="5px";
 
     boxesArray.push(boxEl);
@@ -59,6 +60,7 @@ const createBoxes = (amount) => {
   console.log(boxesArray);
 
 };
+
 
 
 btnCreate.addEventListener('click', createBoxes);
