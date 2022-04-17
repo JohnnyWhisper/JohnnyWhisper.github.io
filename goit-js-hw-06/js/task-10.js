@@ -10,7 +10,6 @@ const inputEl = document.querySelector("input");
 console.log(inputEl);
 
 
-
 const btnCreate = document.querySelector("button[data-create]");
 console.log(btnCreate);
 
@@ -21,23 +20,17 @@ const divBoxes = document.querySelector("#boxes");
 console.log(divBoxes);
 
 
-
-inputEl.addEventListener('input', getInputValue);
-
 function getInputValue() {
   const amount = inputEl.value;
  
- 
   createBoxes(amount);
 }
-
 
 
 const createBoxes = (amount) => {
     
   const boxesArray = [];
   
-
   for (let i=0; i<amount; i += 1) {
   
     const boxEl = document.createElement("div");
@@ -45,15 +38,10 @@ const createBoxes = (amount) => {
 
     const basicSize = 30;
     const size = basicSize + i * 10;
-
-
     boxEl.style.width =  `${size}px`;
     boxEl.style.height= `${size}px`;
-
     boxEl.style.margin ="5px";
-
     boxesArray.push(boxEl);
-
   }
 
   divBoxes.append(... boxesArray);
@@ -62,8 +50,7 @@ const createBoxes = (amount) => {
 };
 
 
-
-btnCreate.addEventListener('click', createBoxes);
+btnCreate.addEventListener('click', getInputValue);
 
 const destroyBoxes = () => {
   divBoxes.remove();
