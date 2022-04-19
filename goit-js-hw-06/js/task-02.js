@@ -9,8 +9,6 @@ const ingredients = [
 
 
 const ingredientsList = document.querySelector("#ingredients");
-console.log(ingredientsList);
-
 
 
 const createIngredientElement = (name) => {
@@ -23,7 +21,6 @@ return ingredientEl;
 };
 
 const ingredientElements = ingredients.map(createIngredientElement);
-console.log(ingredientElements);
 
 ingredientsList.append(...ingredientElements);
 

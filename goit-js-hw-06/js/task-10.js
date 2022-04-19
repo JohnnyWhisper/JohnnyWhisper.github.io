@@ -4,20 +4,15 @@ function getRandomHexColor() {
 
 
 const controls = document.querySelector("#controls");
-console.log(controls);
 
 const inputEl = document.querySelector("input");
-console.log(inputEl);
 
 
 const btnCreate = document.querySelector("button[data-create]");
-console.log(btnCreate);
 
 const btnDestroy = document.querySelector("button[data-destroy]");
-console.log(btnDestroy);
 
 const divBoxes = document.querySelector("#boxes");
-console.log(divBoxes);
 
 
 function getInputValue() {
@@ -45,7 +40,6 @@ const createBoxes = (amount) => {
   }
 
   divBoxes.append(... boxesArray);
-  console.log(boxesArray);
 
 };
 
