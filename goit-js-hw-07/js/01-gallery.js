@@ -1,5 +1,6 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
+console.log(galleryItems);
 
 const galleryList = document.querySelector(".gallery");
 
@@ -39,7 +40,7 @@ function selectPicture (event) {
     <img src="${bigPictureUrl}" width="800" height="600">
     `, {
         onShow: (bigPicture) => {
-            window.onkeydown = bigPicture.close
+          window.onkeydown = bigPicture.close
         }
     });
 
