@@ -26,6 +26,7 @@ galleryList.append(...galleryElements);
 galleryList.addEventListener ("click", selectPicture);
 
 
+
 function selectPicture (event) {
     event.preventDefault();
 
@@ -40,7 +41,13 @@ function selectPicture (event) {
     <img src="${bigPictureUrl}" width="800" height="600">
     `, {
         onShow: (bigPicture) => {
-          window.onkeydown = bigPicture.close
+
+          window.addEventListener ("keydown", (event) => {
+            if (event.code === "Escape") {
+            bigPicture.close();
+            }
+          });
+          
         }
     });
 
