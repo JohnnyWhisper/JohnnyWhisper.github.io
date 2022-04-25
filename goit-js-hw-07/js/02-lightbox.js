@@ -3,6 +3,7 @@ import { galleryItems } from './gallery-items.js';
 
 console.log(galleryItems);
 
+
 const galleryList = document.querySelector(".gallery");
 
 const createGalleryItems = ({preview, original, description}) => {
@@ -14,8 +15,7 @@ const createGalleryItems = ({preview, original, description}) => {
       alt="${description}"
     />
   </a>`);
-  
-//   console.log(galleryEl);
+
   return galleryEl;
  
 }
@@ -23,28 +23,28 @@ const createGalleryItems = ({preview, original, description}) => {
 const galleryElements = galleryItems.map(createGalleryItems);
 galleryList.append(...galleryElements);
 
-// console.log(galleryList);
+
+const captionOptions = {
+    captionSelector: 'img', 
+    captionType: 'attr',
+    captionsData: 'alt',
+    captionPosition: 'bottom',
+    captionDelay: 250,
+    enableKeyboard: true,
+    uniqueImages: true,
+   };
 
 
 galleryList.addEventListener ("click", selectPicture);
 
+
 function selectPicture (event) {
     event.preventDefault();
-
-    if (event.target.classList.contains(".gallery")) {
-        return;
-    }
-
-    let gallery = new SimpleLightbox('.gallery__item');
-
-    gallery.on('show.simplelightbox', function () {
-
-
-        SimpleLightbox.captionSelector = self;
-        SimpleLightbox.captionType = alt;
-        SimpleLightbox.captionDelay = 250;
-
-});
-
+    
 }
 
+let gallery = new SimpleLightbox('.gallery a', captionOptions);
+
+    gallery.on('show.simplelightbox', function () {
+    
+    });
