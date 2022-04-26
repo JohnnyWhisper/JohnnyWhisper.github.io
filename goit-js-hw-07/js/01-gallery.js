@@ -52,7 +52,10 @@ function selectPicture (event) {
     });
 
     bigPicture.show()
-
 }
 
-
+window.removeEventListener ("keydown", (event) => {
+  if (event.code === "Escape") {
+  bigPicture.close();
+  }
+});
