@@ -39,12 +39,12 @@ galleryList.addEventListener ("click", selectPicture);
 
 
 function selectPicture (event) {
-    event.preventDefault();
-    
+    event.preventDefault();   
 }
 
-let gallery = new SimpleLightbox('.gallery a', captionOptions);
+let instance = new SimpleLightbox('.gallery a', captionOptions);
 
-    gallery.on('show.simplelightbox', function () {
+    instance.on('show.simplelightbox', function () {
     
     });
+
