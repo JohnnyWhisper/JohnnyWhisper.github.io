@@ -42,7 +42,7 @@ function selectPicture (event) {
     `, {
         onShow: (instance) => {
 
-          window.addEventListener ("keydown", (event) => {
+          galleryList.addEventListener ("keydown", (event) => {
             if (event.code === "Escape") {
             instance.close();
             }
@@ -55,7 +55,7 @@ function selectPicture (event) {
     
      {
        onClose: (instance) => {
-        window.removeEventListener ("keydown", (event) => {
+        galleryList.removeEventListener ("keydown", (event) => {
           if (event.code === "Escape") {
           instance.close();
           }
