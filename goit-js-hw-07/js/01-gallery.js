@@ -37,25 +37,36 @@ function selectPicture (event) {
     const bigPictureUrl = event.target.dataset.source;
 
 
-    const bigPicture = basicLightbox.create (`
+    const instance = basicLightbox.create (`
     <img src="${bigPictureUrl}" width="800" height="600">
     `, {
-        onShow: (bigPicture) => {
+        onShow: (instance) => {
 
           window.addEventListener ("keydown", (event) => {
             if (event.code === "Escape") {
-            bigPicture.close();
+            instance.close();
             }
           });
           
         }
-    });
+        
+    }
+    ,
+    
+     {
+       onClose: (instance) => {
+        window.removeEventListener ("keydown", (event) => {
+          if (event.code === "Escape") {
+          instance.close();
+          }
+        });
+       }
+     }
 
-    bigPicture.show()
+    );
+
+    instance.show()
 }
 
-window.removeEventListener ("keydown", (event) => {
-  if (event.code === "Escape") {
-  bigPicture.close();
-  }
-});
+
+

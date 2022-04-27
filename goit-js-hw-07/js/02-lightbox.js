@@ -23,6 +23,7 @@ const createGalleryItems = ({preview, original, description}) => {
 const galleryElements = galleryItems.map(createGalleryItems);
 galleryList.append(...galleryElements);
 
+galleryList.addEventListener ("click", selectPicture);
 
 const captionOptions = {
     captionSelector: 'img', 
@@ -34,8 +35,6 @@ const captionOptions = {
     uniqueImages: true,
    };
 
-
-galleryList.addEventListener ("click", selectPicture);
 
 
 function selectPicture (event) {
