@@ -7,6 +7,13 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Johnny_Whisper <johnny_whisper@meta.ua>",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
