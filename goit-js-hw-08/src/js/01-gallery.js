@@ -7,7 +7,7 @@ console.log(galleryItems);
 const galleryList = document.querySelector(".gallery");
 
 const createGalleryItems = ({preview, original, description}) => {
-    const galleryEl = document.createElement("li");
+    const galleryEl = document.createElement("div");
     galleryEl.insertAdjacentHTML("afterbegin", `<a class="gallery__item" href="${original}">
     <img
       class="gallery__image"
