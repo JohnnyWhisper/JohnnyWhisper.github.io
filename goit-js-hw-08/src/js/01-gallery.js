@@ -50,3 +50,4 @@ let instance = new SimpleLightbox('.gallery a', captionOptions);
     instance.on('show.simplelightbox', function () {
     
     });
+    
