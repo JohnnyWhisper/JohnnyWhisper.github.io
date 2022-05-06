@@ -1,3 +1,7 @@
+import SimpleLightbox from "simplelightbox";
+
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 // Change code below this line
@@ -40,3 +44,9 @@ const captionOptions = {
 function selectPicture (event) {
     event.preventDefault();   
 }
+
+let instance = new SimpleLightbox('.gallery a', captionOptions);
+
+    instance.on('show.simplelightbox', function () {
+    
+    });
