@@ -6,7 +6,6 @@ const player = new Vimeo.Player(iframe);
 
 
 player.on('timeupdate', function(data) {
-
 const currentTime = data.seconds;
 console.log(currentTime);
 localStorage.setItem("videoplayer-current-time", `${currentTime}`)
@@ -20,3 +19,4 @@ player.setCurrentTime(0.01).then(function(seconds) {
     player.setCurrentTime(seconds);
 
 })
+
