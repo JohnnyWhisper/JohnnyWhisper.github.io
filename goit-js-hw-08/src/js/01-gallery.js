@@ -29,25 +29,17 @@ galleryList.append(...galleryElements);
 
 galleryList.addEventListener ("click", selectPicture);
 
-const captionOptions = {
-    captionSelector: 'img', 
-    captionType: 'attr',
-    captionsData: 'alt',
-    captionPosition: 'bottom',
-    captionDelay: 250,
-    enableKeyboard: true,
-    uniqueImages: true,
-   };
-
-
 
 function selectPicture (event) {
     event.preventDefault();   
 }
 
-let instance = new SimpleLightbox('.gallery a', captionOptions);
-
-    instance.on('show.simplelightbox', function () {
-    
-    });
-    
+    new SimpleLightbox('.gallery a', {
+      captionSelector: 'img', 
+      captionType: 'attr',
+      captionsData: 'alt',
+      captionPosition: 'bottom',
+      captionDelay: 250,
+      enableKeyboard: true,
+      uniqueImages: true,
+     });
