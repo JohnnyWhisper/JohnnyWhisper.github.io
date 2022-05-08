@@ -1,4 +1,4 @@
-
+import throttle from 'lodash.throttle';
 
 const formEl = document.querySelector(".feedback-form");
 const emailEl = formEl.elements.email;
@@ -36,9 +36,7 @@ formEl.addEventListener('submit', (event) => {
 
     console.log(storageContent);
 
-    emailEl.value = null;
-    messageEl.value = null;
-
+    event.currentTarget.reset();
     localStorage.clear();
 });
 
